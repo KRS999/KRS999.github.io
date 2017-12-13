@@ -1,0 +1,20 @@
+@font-face {
+	font-family: 'Georgia';
+	src: url(../fonts/georgia-bold.woff);
+}
+@font-face {
+	font-family: 'Normal';
+	src: url(../fonts/helvetica-neue-regular.woff);
+}
+@font-face {
+	font-family: 'Bold';
+	src: url(../fonts/helvetica-neue-bold.woff);
+}
+@font-face {
+	font-family: 'Light';
+	src: url(../fonts/helvetica-neue-light.woff);
+}
+@font-face {
+	font-family: 'oRegular';
+	src: url(../fonts/OpenSans/OpenSansRegular.ttf);
+}
