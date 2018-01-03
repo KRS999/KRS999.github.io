@@ -532,12 +532,9 @@ button {
   transform: rotate(-45deg);
 }
 .tab {
-  opacity: 0;
   display: none;
 }
 .active {
-  opacity: 1;
-  -webkit-transition: opacity 1s;
   display: block;
 }
 .product-section {
@@ -712,15 +709,29 @@ button {
   position: absolute;
   background: #2D7629;
 }
-.get-section .get_wrap .get_wrap_form input {
+.get-section .get_wrap .get_wrap_form {
   width: 100%;
   max-width: 540px;
+  margin: 0 auto;
+  position: relative;
+}
+.get-section .get_wrap .get_wrap_form input[type='text'] {
+  width: 100%;
   color: #241e1e;
   border-radius: 3px;
-  padding: 17px 30px;
+  padding: 17px 55px 17px 30px;
   text-overflow: ellipsis;
   border: 1px solid #2D7629;
   font: 16px "RobotoLight", sans-serif;
+}
+.get-section .get_wrap .get_wrap_form input[type='submit'] {
+  border: 0;
+  top: 25px;
+  right: 27px;
+  position: absolute;
+  background-position: -184px -42px;
+  background-image: url(../img/sprite.png);
+  background-color: transparent;
 }
 .footer-section {
   padding-top: 150px;
