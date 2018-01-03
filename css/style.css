@@ -413,6 +413,9 @@ a {
 .myWork .site__wrap .site-4 {
   background-image: url(../img/site-4.jpg);
 }
+.myWork .site__wrap .site-5 {
+  background-image: url(../img/site-5.jpg);
+}
 .skills {
   min-height: 750px;
   padding-top: 81px;
