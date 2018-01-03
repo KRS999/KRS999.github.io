@@ -1,0 +1,32 @@
+@font-face {
+	font-family: 'Autumn';
+	src: url(../fonts/Autumn/AutumnNovember.ttf);
+}
+@font-face {
+	font-family: 'Regular';
+	src: url(../fonts/RobotoSlab/RobotoSlab-Regular.ttf);
+}
+@font-face {
+	font-family: 'Light';
+	src: url(../fonts/RobotoSlab/RobotoSlab-Light.ttf);
+}
+@font-face {
+	font-family: 'Bold';
+	src: url(../fonts/RobotoSlab/RobotoSlab-Bold.ttf);
+}
+@font-face {
+	font-family: 'RobotoRegular';
+	src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+@font-face {
+	font-family: 'RobotoBold';
+	src: url(../fonts/Roboto/Roboto-Bold.ttf);
+}
+@font-face {
+	font-family: 'RobotoLight';
+	src: url(../fonts/Roboto/Roboto-Light.ttf);
+}
+@font-face {
+	font-family: 'Cardo-Italic';
+	src: url(../fonts/Cardo-Italic.ttf);
+}
