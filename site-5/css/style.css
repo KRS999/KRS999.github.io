@@ -6,7 +6,7 @@ body {
   overflow: hidden;
 }
 .container {
-  max-width: 1140px;
+  max-width: 1168px;
 }
 a {
   text-decoration: none;
@@ -572,6 +572,24 @@ button {
   padding: 30px 0 0 0;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
 }
+.product-section .product_box:after {
+  content: '';
+  width: 47px;
+  height: 26px;
+  left: 242px;
+  top: 0;
+  background-image: url(../img/hoof.png);
+  position: absolute;
+}
+.product-section .product_box:before {
+  content: '';
+  width: 47px;
+  height: 26px;
+  right: 242px;
+  top: 0;
+  background-image: url(../img/hoof.png);
+  position: absolute;
+}
 .product-section .product_box .santa_left {
   position: absolute;
   top: 95px;
@@ -794,6 +812,12 @@ button {
   .product-section .product_box_wrap .product_box_text_2 {
     margin: 0 75px;
   }
+  .product-section .product_box:after {
+    left: 145px;
+  }
+  .product-section .product_box:before {
+    right: 145px;
+  }
 }
 @media screen and (max-width: 991px) {
   .header-section .header_menu {
@@ -812,6 +836,12 @@ button {
   }
   .product-section .product_box_wrap .product_box_text_2 {
     margin: 0 25px;
+  }
+  .product-section .product_box:after {
+    left: 40px;
+  }
+  .product-section .product_box:before {
+    right: 40px;
   }
 }
 @media screen and (max-width: 768px) {
