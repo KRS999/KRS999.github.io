@@ -375,7 +375,7 @@ a {
 }
 .myWork .site__wrap .site {
   width: 100%;
-  height: 366px;
+  height: 350px;
   border-radius: 5px;
   overflow: hidden;
   -moz-transition: all 1s ease-out;
@@ -415,6 +415,9 @@ a {
 }
 .myWork .site__wrap .site-5 {
   background-image: url(../img/site-5.jpg);
+}
+.myWork .site__wrap .site-6 {
+  background-image: url(../img/site-6.jpg);
 }
 .skills {
   min-height: 750px;
