@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device=width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<title>Sportclothes</title>
+<link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+<link rel="stylesheet" type="text/css" href="css/fonts.css">
+<link rel="stylesheet" type="text/css" href="css/hover.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css">
+<link rel="stylesheet" type="text/css" href="css/normalize.css">
+<link rel="stylesheet" type="text/css" href="libs/slick/slick.css">
+<link rel="stylesheet" type="text/css" href="libs/slick/slick-theme.css">
+<link rel="stylesheet" type="text/css" href="css/animate.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="libs/slick/slick.min.js"></script>
+<script type="text/javascript" src="libs/headhesive/headhesive.js"></script>
+<script type="text/javascript" src="libs/headhesive/helpers.js"></script>
+<script type="text/javascript" src="libs/PageScroll/PageScroll2id.min.js"></script>
+<script type="text/javascript" src="js/device.js"></script>
+</head>
+<body>
+	<div class="header-section">
+	<div class="container">
+		<div class="row">
+			<div class="header_wrap">
+				<div class="logo col-lg-5 col-md-5 col-sm-4 col-xs-11">
+					<a href="index.html">Sportclothes<span>.</span></a>
+				</div>
+				<div id="nav-icon3" class="open_menu hidden-lg hidden-md hidden-sm col-xs-1">
+				  <span></span>
+				  <span></span>
+				  <span></span>
+				  <span></span>
+				</div>
+				<div class="header_menu_wrap col-lg-7 col-md-7 col-sm-8">
+					<div class="header_menu va">
+						<ul>
+							<li><a href="#">Men&#39;s</a></li>
+							<li><a href="#">Women&#39;s</a></li>
+							<li><a href="#">Kid&#39;s</a></li>
+							<li><a href="#">Fitness</a></li>
+						</ul>
+					</div>
+					<div class="header_mini_menu va">
+						<ul>
+							<li class="open_search"><a href="#"><span class="icon icon-small icon-search"></span></a></li>
+							<li class="open_reg_login"><a href="#"><span class="icon icon-small icon-login"></span></a></li>
+							<li><a href="#"><span class="icon icon-small icon-backlist"></span></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="header_search">
+<button class="menuClose"></button>
+	<div id="header_search_wrap" class="header_search_wrap">
+		<form action="">
+			<input type="text" placeholder="Search products...">
+		</form>
+	</div>
+</div>
+<div class="reg-login">
+	<button class="regClose"></button>
+	<div class="reg_login_wrap">
+		<div class="reg_login_tab">
+			<ul>
+				<li><a href="login" onclick="tabs(this);" class="active">Войти</a></li>
+				<li><a href="reg" onclick="tabs(this);">Регистрация</a></li>
+			</ul>
+		</div>
+		<div class="tab-content">
+			<div class="tab active" id="login">
+				<form action="">
+					<input type="text" placeholder="Логин">
+					<input type="text" placeholder="Пароль">
+					<input type="submit" value="Войти">
+				</form>
+			</div>
+			<div class="tab" id="reg">
+				<form action="">
+					<input type="text" placeholder="Логин">
+					<input type="text" placeholder="Пароль">
+					<input type="text" placeholder="Повторите пароль">
+					<input type="text" placeholder="Введите @email">
+					<input type="submit" value="Зарегистрироваться">
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="slider-section">
+	<div class="slider">
+		<div class="slider__wrap slider__img">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 col-md-12">
+						<div class="slider__text">
+							<h1>
+							Скоростной велобайк
+							</h1>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+							<span class="price" id="price">$2349.50</span>
+							<span class="copy">&#64;2017 Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="slider__wrap slider__img_2">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 col-md-12">
+						<div class="slider__text">
+							<h1>
+							Экстремальные лыжи:D
+							</h1>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+							<span class="price" id="price">$1349.50</span>
+							<span class="copy">&#64;2017 Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	<div class="product-section">
+	<div class="container rowFixed">
+		<div class="row">
+			<div class="product_wrap">
+				<div class="product_box col-lg-4 col-md-4 col-sm-4">
+					<a href="catalog.html" class="productHover">
+						<img src="img/imgPr-1.png" alt="Product">
+						<span class="discout discout-blue">Sale</span>
+						<span class="title_span">2xu urban fit running shorts</span>
+						<p>
+							Lorem ipsum dolor sit amet,consectetur <br>
+							 adipisicing elit.
+						</p>
+						<button class="showProduct">Show now</button>
+					</a>
+				</div>
+				<div class="product_box col-lg-4 col-md-4 col-sm-4">
+					<a href="catalog.html" class="productHover">
+						<img src="img/imgPr-2.png" alt="Product">
+						<span class="discout discout-red">Hot</span>
+						<span class="title_span">2xu urban fit running shorts</span>
+						<p>
+							Lorem ipsum dolor sit amet,consectetur <br>
+							 adipisicing elit.
+						</p>
+						<button class="showProduct">Show now</button>
+					</a>
+				</div>
+				<div class="product_box col-lg-4 col-md-4 col-sm-4">
+					<a href="catalog.html" class="productHover">
+						<img src="img/imgPr-3.png" alt="Product">
+						<span class="discout discout-pink">New</span>
+						<span class="title_span">2xu urban fit running shorts</span>
+						<p>
+							Lorem ipsum dolor sit amet,consectetur <br>
+							 adipisicing elit.
+						</p>
+						<button class="showProduct">Show now</button>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	
+<!--Company Slider Section-->
+<div class="slider-company-section">
+	<div class="container">
+		<div class="row">
+			<div class="slider_wrap">
+				<div class="slider_wrap_box">
+				<a href="#">
+					<i class="KRS KRS__Adidas"></i>
+				</a>
+				</div>
+				<div class="slider_wrap_box">
+				<a href="#">
+					<i class="KRS KRS__CocaCola"></i>
+				</a>
+				</div>
+				<div class="slider_wrap_box">
+				<a href="#">
+					<i class="KRS KRS__Puma"></i>
+				</a>
+				</div>
+				<div class="slider_wrap_box">
+				<a href="#">
+					<i class="KRS KRS__Kappa"></i>
+				</a>
+				</div>
+				<div class="slider_wrap_box">
+				<a href="#">
+					<i class="KRS KRS__Nokia"></i>
+				</a>
+				</div>
+				<div class="slider_wrap_box">
+				<a href="#">
+					<i class="KRS KRS__Nike"></i>
+				</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	<div class="popularPr-section">
+	<div class="container">
+		<div class="row">
+			<div class="popularPr_wrap col-lg-12">
+				<h2>Popular products</h2>
+				<div class="popularPr_box col-lg-3 col-md-3 col-sm-3">
+					<img src="img/popularPrImg-1.png" alt="Image">
+					<span class="discout discout-red">-70%</span>
+					<span class="nameProduct">
+					Salomon trail 20 running backpack <br>
+					ss16
+					</span>
+					<p>Backpacks</p>
+					<span class="priceProduct">$10.50</span>
+				</div>
+				<div class="popularPr_box col-lg-3 col-md-3 col-sm-3">
+					<img src="img/popularPrImg-2.png" alt="Image">
+					<span class="nameProduct">
+					Salomon trail 20 running backpack <br>
+					ss16
+					</span>
+					<p>Backpacks</p>
+					<span class="priceProduct">$10.50</span>
+				</div>
+				<div class="popularPr_box col-lg-3 col-md-3 col-sm-3">
+					<img src="img/popularPrImg-3.png" alt="Image">
+					<span class="discout discout-green">-20%</span>
+					<span class="nameProduct">
+					Salomon trail 20 running backpack <br>
+					ss16
+					</span>
+					<p>Backpacks</p>
+					<span class="priceProduct">$10.50</span>
+				</div>
+				<div class="popularPr_box col-lg-3 col-md-3 col-sm-3">
+					<img src="img/popularPrImg-4.png" alt="Image">
+					<span class="discout discout-yellow">-40%</span>
+					<span class="nameProduct">
+					Salomon trail 20 running backpack <br>
+					ss16
+					</span>
+					<p>Backpacks</p>
+					<span class="priceProduct">$10.50</span>
+				</div>
+			</div>
+			<div class="popularPr_wrap col-lg-12">
+				<div class="popularPr_box col-lg-3 col-md-3 col-sm-3">
+					<img src="img/popularPrImg-5.png" alt="Image">
+					<span class="nameProduct">
+					Salomon trail 20 running backpack <br>
+					ss16
+					</span>
+					<p>Backpacks</p>
+					<span class="priceProduct">$10.50</span>
+				</div>
+				<div class="popularPr_box col-lg-3 col-md-3 col-sm-3">
+					<img src="img/popularPrImg-6.png" alt="Image">
+					<span class="discout discout-cyan">-15%</span>
+					<span class="nameProduct">
+					Salomon trail 20 running backpack <br>
+					ss16
+					</span>
+					<p>Backpacks</p>
+					<span class="priceProduct">$10.50</span>
+				</div>
+				<div class="popularPr_box col-lg-3 col-md-3 col-sm-3">
+					<img src="img/popularPrImg-7.png" alt="Image">
+					<span class="discout discout-red">-70%</span>
+					<span class="nameProduct">
+					Salomon trail 20 running backpack <br>
+					ss16
+					</span>
+					<p>Backpacks</p>
+					<span class="priceProduct">$10.50</span>
+				</div>
+				<div class="popularPr_box col-lg-3 col-md-3 col-sm-3">
+					<img src="img/popularPrImg-8.png" alt="Image">
+					<span class="nameProduct">
+					Salomon trail 20 running backpack <br>
+					ss16
+					</span>
+					<p>Backpacks</p>
+					<span class="priceProduct">$10.50</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="slider-bottom-popular">
+	<div class="slider">
+		<div class="slider__wrap slider__img">
+			<div class="container">
+				<div class="slider__text">
+					<h1>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+					</h1>
+					<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>
+					Ipsum dolor sit amet, consectetur adipisicing elit.
+					</p>
+					<a href="#">Read Now</a>
+				</div>
+			</div>
+		</div>
+		<div class="slider__wrap slider__img">
+			<div class="container">
+				<div class="slider__text">
+					<h1>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+					</h1>
+					<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>
+					Ipsum dolor sit amet, consectetur adipisicing elit.
+					</p>
+					<a href="#">Read Now</a>
+				</div>
+			</div>
+		</div>
+		<div class="slider__wrap slider__img">
+			<div class="container">
+				<div class="slider__text">
+					<h1>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+					</h1>
+					<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>
+					Ipsum dolor sit amet, consectetur adipisicing elit.
+					</p>
+					<a href="#">Read Now</a>
+				</div>
+			</div>
+		</div>
+		<div class="slider__wrap slider__img">
+			<div class="container">
+				<div class="slider__text">
+					<h1>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+					</h1>
+					<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>
+					Ipsum dolor sit amet, consectetur adipisicing elit.
+					</p>
+					<a href="#">Read Now</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="slider-bottom-line">
+	<div class="container">
+		<div class="row">
+			<div class="slider_bottom_line_wrap">
+				<div class="slider_bottom_line_box col-lg-3 col-md-3 col-sm-3">
+					<span class="icon icon-big icon-free"></span>
+					<span>
+					<h3>Free shipping</h3>
+					<p>Free shipping on all UK order</p>
+					</span>
+				</div>
+				<div class="slider_bottom_line_box col-lg-3 col-md-3 col-sm-3">
+					<span class="icon icon-big icon-return"></span>
+					<span>
+					<h3>Free shipping</h3>
+					<p>Free shipping on all UK order</p>
+					</span>
+				</div>
+				<div class="slider_bottom_line_box col-lg-3 col-md-3 col-sm-3">
+					<span class="icon icon-big icon-clock"></span>
+					<span>
+					<h3>Free shipping</h3>
+					<p>Free shipping on all UK order</p>
+					</span>
+				</div>
+				<div class="slider_bottom_line_box col-lg-3 col-md-3 col-sm-3">
+					<span class="icon icon-big icon-support"></span>
+					<span>
+					<h3>Free shipping</h3>
+					<p>Free shipping on all UK order</p>
+					</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="email-section">
+	<div class="container">
+		<div class="email_wrap">
+			<form action="">
+				<label for="">Newslatter</label>
+				<div class="input_wrap">
+					<input type="text" placeholder="Enter your email adress...">
+					<button><span class="icon icon-small icon-plus"></span></button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+	<div class="footer-section">
+	<div class="container">
+		<div class="row">
+			<div class="footer_wrap">
+				<div class="footer_box footer_one_box col-lg-6 col-md-6 col-sm-6">
+					<span>Aboutus</span>
+					<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit iure <br>
+					perspiciatis fuga reiciendis magnam provident aut labore. Esse quis<br> 
+					alias repellat iste maiores dicta obcaecati!
+					</p>
+					<span>Joinus</span>
+					<ul>
+						<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+						<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+						<li><a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+						<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+						<li><a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+					</ul>
+				</div>
+				<div class="footer_box footer_all_box col-lg-2 col-md-2 col-sm-2">
+					<span>Custumes care</span>
+					<ul>
+						<li><a href="#">FAQ</a></li>
+						<li><a href="#">Contact Us</a></li>
+						<li><a href="#">My Account</a></li>
+						<li><a href="#">Hov to order</a></li>
+						<li><a href="#">Price beat promps</a></li>
+					</ul>
+				</div>
+				<div class="footer_box footer_all_box col-lg-2 col-md-2 col-sm-2">
+					<span>Order info</span>
+					<ul>
+						<li><a href="#">Order traccking</a></li>
+						<li><a href="#">Delivery &amp; features</a></li>
+						<li><a href="#">Gift vouchers</a></li>
+						<li><a href="#">Payment inforamtion</a></li>
+					</ul>
+				</div>
+				<div class="footer_box footer_all_box col-lg-2 col-md-2 col-sm-2">
+					<span>Company info</span>
+					<ul>
+						<li><a href="#">About us</a></li>
+						<li><a href="#">Careers</a></li>
+						<li><a href="#">secure shoping</a></li>
+						<li><a href="#">Privacu police</a></li>
+						<li><a href="#">Tems &amp; conditions</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+	<script type="text/javascript" src="js/function.js"></script>
+	<script type="text/javascript" src="js/wow.min.js"></script>
+	<script>
+		new WOW().init();
+	</script>
+</body>
+</html>
