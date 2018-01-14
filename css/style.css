@@ -355,7 +355,7 @@ a {
 .myWork {
   background: #fff;
   padding-top: 80px;
-  padding-bottom: 20px;
+  overflow: hidden;
   text-align: center;
 }
 .myWork span {
@@ -371,7 +371,8 @@ a {
   margin-bottom: 30px;
   border-radius: 5px;
   overflow: hidden;
-  box-shadow: 0 0 4px rgba(14, 14, 14, 0.5);
+  border: 1px solid rgba(14, 14, 14, 0.3);
+  box-shadow: 0 0 5px rgba(14, 14, 14, 0.3);
 }
 .myWork .site__wrap .site {
   width: 100%;
@@ -418,6 +419,26 @@ a {
 }
 .myWork .site__wrap .site-6 {
   background-image: url(../img/site-6.jpg);
+}
+.myWork .site__wrap .site-7 {
+  background-image: url(../img/site-7.jpg);
+}
+.work-more {
+  width: 100%;
+  max-width: 150px;
+  color: #141414;
+  font: 16px "Regular", sans-serif;
+  border-radius: 5px;
+  padding: 10px 50px;
+  transition: 1s;
+  display: block;
+  text-align: center;
+  margin: 0 auto 30px auto;
+  border: 1px solid #00B7F1;
+}
+.work-more:hover {
+  color: #fff;
+  background: #00B7F1;
 }
 .skills {
   min-height: 750px;
@@ -542,6 +563,11 @@ a {
 .footer__bottom a span {
   color: #fff;
 }
+@media screen and (max-width: 1200px) {
+  .myWork .site__wrap .site {
+    height: 260px;
+  }
+}
 @media screen and (max-width: 991px) {
   .menu ul li {
     margin-right: 25px;
@@ -587,9 +613,6 @@ a {
   }
   .menu ul li a {
     font-size: 25px;
-  }
-  .myWork .site__wrap .site {
-    height: 280px;
   }
 }
 @media screen and (max-width: 600px) {
