@@ -1,0 +1,36 @@
+@font-face {
+	font-family: 'Bold';
+	src: url(../fonts/Montserrat/Montserrat-Bold.ttf);
+}
+@font-face {
+	font-family: 'Regular';
+	src: url(../fonts/Montserrat/Montserrat-Regular.ttf);
+}
+@font-face {
+	font-family: 'Light';
+	src: url(../fonts/Montserrat/Montserrat-Light.ttf);
+}
+@font-face {
+	font-family: 'SemiBold';
+	src: url(../fonts/Montserrat/Montserrat-SemiBold.ttf);
+}
+@font-face {
+	font-family: 'Medium';
+	src: url(../fonts/Montserrat/Montserrat-Medium.ttf);
+}
+@font-face {
+	font-family: 'MinionPro';
+	src: url(../fonts/MinionPro.ttf);
+}
+@font-face {
+	font-family: 'RalewayBold';
+	src: url(../fonts/Raleway/Raleway-Bold.ttf);
+}
+@font-face {
+	font-family: 'OpenSansBold';
+	src: url(../fonts/OpenSans/OpenSansBold.ttf);
+}
+@font-face {
+	font-family: 'OpenSansRegular';
+	src: url(../fonts/OpenSans/OpenSansRegular.ttf);
+}
