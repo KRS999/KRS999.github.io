@@ -1,4 +1,11 @@
 $(document).ready(function() {
+//Загрузить еще
+	$('#work-more').click(function(event) {
+		event.preventDefault();
+		$('#work-1').fadeIn();
+		$(this).hide();
+	});
+//Загрузить еще
 	$('.nav-icon2').click(function(){
 		if('.nav-icon2 === click'){
 			$(".menu").fadeToggle();
