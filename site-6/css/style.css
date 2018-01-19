@@ -1245,6 +1245,10 @@ a:focus {
     flex-wrap: wrap;
     justify-content: space-around;
   }
+  .popularPr_wrap .popularPr_box,
+  .catalog_wrap .popularPr_box {
+    flex-basis: 200px;
+  }
   .product_box .discout,
   .popularPr_box .discout {
     width: 60px;
@@ -1344,6 +1348,10 @@ a:focus {
   }
   .header-section .header_wrap .logo a {
     font-size: 25px;
+  }
+  .popularPr_wrap .popularPr_box,
+  .catalog_wrap .popularPr_box {
+    flex-basis: 300px;
   }
 }
 @media screen and (max-width: 767px) {
