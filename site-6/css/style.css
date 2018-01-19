@@ -930,10 +930,10 @@ a:focus {
   font: 20px "Bold", sans-serif;
 }
 .catalog_bar .catalog_bar_box label {
-  color: #212121;
+  color: #000;
   margin-right: 15px;
   display: inline-block;
-  font: 13px "Bold", sans-serif;
+  font: 14px "Bold", sans-serif;
   text-transform: uppercase;
 }
 .catalog_bar .catalog_bar_box:last-child {
@@ -980,10 +980,10 @@ a:focus {
   max-width: 18%;
 }
 .catalogFlex .catalog_wrap_tab_box span {
-  color: #212121;
+  color: #000;
   display: block;
   margin-bottom: 5px;
-  font: 12px "Bold", sans-serif;
+  font: 14px "Bold", sans-serif;
   text-transform: uppercase;
 }
 .catalogFlex .catalog_wrap_tab_box .irs-from,
@@ -997,7 +997,7 @@ a:focus {
   margin-top: 20px;
   background: transparent;
   -moz-border-radius: 3px;
-  font: 11px "OpenSansBold", sans-serif;
+  font: 14px "Bold", sans-serif;
 }
 .catalogFlex .catalog_wrap_tab_box .catalog_box_tab {
   padding: 0 15px;
@@ -1016,7 +1016,7 @@ a:focus {
   white-space: nowrap;
   vertical-align: middle;
   text-overflow: ellipsis;
-  font: 12px "OpenSansRegular", sans-serif;
+  font: 14px "Bold", sans-serif;
 }
 .catalogFlex .catalog_wrap_tab_box .catalog_box_tab li a p {
   display: inline-block;
@@ -1025,15 +1025,23 @@ a:focus {
   font: 11px "OpenSansBold", sans-serif;
 }
 .catalogFlex .catalog_wrap_tab_box .catalog_box_tab li .active_2 {
-  color: #212121;
+  color: #000;
 }
 .catalogFlex .catalog_box_tab,
 .catalogFlex .colorsProduct {
   margin-bottom: 30px;
 }
 .catalogFlex .catalog_wrap_box {
-  flex-basis: 23%;
+  flex-basis: 24%;
   padding: 0 20px;
+}
+.catalogFlex .catalog_wrap_box .discout {
+  width: 60px;
+  height: 60px;
+  padding-top: 23px;
+  font-size: 11px;
+  top: 55px;
+  left: 37px;
 }
 .catalogFlex .priceProductSlider {
   margin-bottom: 50px;
@@ -1064,9 +1072,9 @@ a:focus {
   border-radius: 0;
   background: transparent;
   box-shadow: none;
-  font: 13px/32px "OpenSansRegular", sans-serif;
+  font: 14px/32px "Bold", sans-serif;
   line-height: 29px;
-  color: #B3B3B3;
+  color: #b4b4b4;
   text-shadow: transparent;
 }
 .jq-selectbox__dropdown {
@@ -1286,6 +1294,13 @@ a:focus {
   .catalog_bar .item_box li {
     margin-right: 25px;
   }
+  .catalogFlex .catalog_wrap_box .discout {
+    width: 50px;
+    height: 50px;
+    padding-top: 17px;
+    left: 10px;
+    top: 35px;
+  }
 }
 @media screen and (max-width: 991px) {
   .header-section .header_wrap .header_menu_wrap .header_menu li {
@@ -1485,6 +1500,16 @@ a:focus {
   }
   .open_catalogBox {
     display: none;
+  }
+  .catalogFlex .catalog_wrap_box {
+    flex-basis: 300px;
+  }
+  .catalogFlex .catalog_wrap_box .discout {
+    width: 50px;
+    height: 50px;
+    padding-top: 17px;
+    left: 10px;
+    top: 35px;
   }
 }
 @media screen and (max-width: 620px) {
