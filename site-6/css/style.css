@@ -1335,7 +1335,7 @@ a:focus {
     flex-basis: 25%;
   }
 }
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 845px) {
   .product-section .product_wrap {
     flex-wrap: wrap;
     justify-content: space-around;
