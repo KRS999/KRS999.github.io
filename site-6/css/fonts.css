@@ -1,22 +1,18 @@
 @font-face {
 	font-family: 'Bold';
-	src: url(../fonts/Raleway/Raleway-Bold.ttf);
+	src: url(../fonts/Panton/Panton-Bold.otf);
 }
 @font-face {
 	font-family: 'Regular';
-	src: url(../fonts/Raleway/Raleway-Regular.ttf);
-}
-@font-face {
-	font-family: 'Light';
-	src: url(../fonts/Raleway/Raleway-Light.ttf);
+	src: url(../fonts/Panton/Panton-Regular.otf);
 }
 @font-face {
 	font-family: 'SemiBold';
-	src: url(../fonts/Raleway/Raleway-SemiBold.ttf);
+	src: url(../fonts/Panton/Panton-SemiBold.otf);
 }
 @font-face {
-	font-family: 'Medium';
-	src: url(../fonts/Raleway/Raleway-Medium.ttf);
+	font-family: 'ExtraBold';
+	src: url(../fonts/Panton/Panton-ExtraBold.otf);
 }
 @font-face {
 	font-family: 'OpenSansBold';
