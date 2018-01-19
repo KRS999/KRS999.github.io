@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device=width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<title>Catalog</title>
+<link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+<link rel="stylesheet" type="text/css" href="css/fonts.css">
+<link rel="stylesheet" type="text/css" href="css/hover.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css">
+<link rel="stylesheet" type="text/css" href="css/normalize.css">
+<link rel="stylesheet" type="text/css" href="libs/slick/slick.css">
+<link rel="stylesheet" type="text/css" href="libs/slick/slick-theme.css">
+<link rel="stylesheet" type="text/css" href="css/animate.css">
+<!--Range Slider Styles-->
+<link rel="stylesheet" type="text/css" href="libs/ionRangeSlider/css/ion.rangeSlider.css">
+<link rel="stylesheet" type="text/css" href="libs/ionRangeSlider/css/ion.rangeSlider.skinNice.css">
+<!--Range Slider Styles-->
+<!--Form Styles-->
+<link rel="stylesheet" type="text/css" href="libs/formStyle/css/jquery.formstyler.css">
+<link rel="stylesheet" type="text/css" href="libs/formStyle/css/jquery.formstyler.theme.css">
+<!--Form Styles-->
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="libs/slick/slick.min.js"></script>
+<script type="text/javascript" src="libs/headhesive/headhesive.js"></script>
+<script type="text/javascript" src="libs/headhesive/helpers.js"></script>
+<!--Range Slider Js-->
+<script type="text/javascript" src="libs/formStyle/js/jquery.formstyler.min.js"></script>
+<!--Range Slider Js-->
+<!--Form Js-->
+<script type="text/javascript" src="libs/ionRangeSlider/js/ion.rangeSlider.js"></script>
+<!--Form Js-->
+<script type="text/javascript" src="libs/PageScroll/PageScroll2id.min.js"></script>
+<script type="text/javascript" src="js/device.js"></script>
+</head>
+<body>
+	<div class="header-section">
+	<div class="container">
+		<div class="row">
+			<div class="header_wrap">
+				<div class="logo col-lg-5 col-md-4 col-sm-3">
+					<a href="index.html">Sportclothes<span>.</span></a>
+				</div>
+				<div id="nav-icon3" class="open_menu hidden-lg hidden-md hidden-sm col-xs-1">
+				  <span></span>
+				  <span></span>
+				  <span></span>
+				  <span></span>
+				</div>
+				<div class="header_menu_wrap col-lg-7 col-md-8 col-sm-9">
+					<div class="header_menu va">
+						<ul>
+							<li><a href="#">Men&#39;s</a></li>
+							<li><a href="#">Women&#39;s</a></li>
+							<li><a href="#">Kid&#39;s</a></li>
+							<li><a href="#">Fitness</a></li>
+						</ul>
+					</div>
+					<div class="header_mini_menu va">
+						<ul>
+							<li class="open_search"><a href="#"><span class="icon icon-small icon-search"></span></a></li>
+							<li class="open_reg_login"><a href="#"><span class="icon icon-small icon-login"></span></a></li>
+							<li><a href="#"><span class="icon icon-small icon-backlist"></span></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="header_search">
+<button class="menuClose"></button>
+	<div id="header_search_wrap" class="header_search_wrap">
+		<form action="">
+			<input type="text" placeholder="Search products...">
+		</form>
+	</div>
+</div>
+<div class="reg-login">
+	<button class="regClose"></button>
+	<div class="reg_login_wrap">
+		<div class="reg_login_tab">
+			<ul>
+				<li><a href="login" onclick="tabs(this);" class="active">Войти</a></li>
+				<li><a href="reg" onclick="tabs(this);">Регистрация</a></li>
+			</ul>
+		</div>
+		<div class="tab-content">
+			<div class="tab active" id="login">
+				<form action="">
+					<input type="text" placeholder="Логин">
+					<input type="text" placeholder="Пароль">
+					<input type="submit" value="Войти">
+				</form>
+			</div>
+			<div class="tab" id="reg">
+				<form action="">
+					<input type="text" placeholder="Логин">
+					<input type="text" placeholder="Пароль">
+					<input type="text" placeholder="Повторите пароль">
+					<input type="text" placeholder="Введите @email">
+					<input type="submit" value="Зарегистрироваться">
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="slider-section">
+	<div class="slider">
+		<div class="slider__wrap slider__img">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 col-md-12">
+						<div class="slider__text">
+							<h1>
+							Football Uniforms
+							</h1>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+							<span class="price" id="price">$349.50</span>
+							<span class="copy">&#64;2017 Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="slider__wrap slider__img_2">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 col-md-12">
+						<div class="slider__text">
+							<h1>
+							Football Uniforms
+							</h1>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+							<span class="price" id="price">$349.50</span>
+							<span class="copy">&#64;2017 Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	<div class="catalog-section">
+	<div class="container">
+		<div class="catalog_bar">
+			<div id="nav-icon3" class="open_catalog hidden-lg hidden-md">
+			  <span></span>
+			  <span></span>
+			  <span></span>
+			  <span></span>
+			</div>
+			<a href="#" class="open_catalogBox hidden-lg hidden-md hidden-sm">
+				<img src="img/arrow_catalogBar.png" alt="">
+			</a>
+			<div class="catalog_bar_box">
+				<h1>Categories</h1>
+			</div>
+			<div class="catalog_bar_wrap">
+				<div class="catalog_bar_box">
+					<form action="" id="catalogForm">
+					<label for="">Sort</label>
+						<select name="" id="">
+							<option>Price (Low To High)</option>
+							<option>Price (Low To High)</option>
+							<option>Price (Low To High)</option>
+						</select>
+					</form>
+				</div>
+				<div class="catalog_bar_box">
+					<form action="" id="catalogForm">
+					<label for="">Size</label>
+						<select name="" id="">
+							<option>20-22</option>
+							<option>20-22</option>
+							<option>20-22</option>
+						</select>
+					</form>
+				</div>
+				<div class="catalog_bar_box">
+					<form action="" id="catalogForm">
+					<label for="">Page</label>
+						<select name="" id="">
+							<option>1 of 2</option>
+							<option>1 of 9</option>
+							<option>1 of 9</option>
+						</select>
+					</form>
+				</div>
+				<div class="catalog_bar_box">
+					<label for="">View</label>
+					<ul class="item_box">
+						<li><a href="#"><span class="icon-item item-1"></span></a></li>
+						<li><a href="#"><span class="icon-item item-2"></span></a></li>
+						<li><a href="#"><span class="icon-item item-3"></span></a></li>
+						<li><a href="#"><span class="icon-item item-4"></span></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="catalogFlex">
+		<div class="catalog_wrap_tab_box">
+			<span>Product type</span>
+			<div class="catalog_box_tab">
+				<ul>
+					<li><a href="all" onclick="tabs_2(this);" class="active_2">All<p>272</p></a></li>
+					<li><a href="brans" onclick="tabs_2(this);">Brans<p>27</p></a></li>
+					<li><a href="Brans" onclick="tabs_2(this);">T-Shirts &amp; Tanks<p>22</p></a></li>
+					<li><a href="Brans" onclick="tabs_2(this);">Tops<p>72</p></a></li>
+					<li><a href="Brans" onclick="tabs_2(this);">Hoodies<p>32</p></a></li>
+					<li><a href="Brans" onclick="tabs_2(this);">Fleence<p>12</p></a></li>
+					<li><a href="Brans" onclick="tabs_2(this);">Jackets &amp; Vests<p>52</p></a></li>
+					<li><a href="Brans" onclick="tabs_2(this);">Dresses &amp; Skirts<p>16</p></a></li>
+					<li><a href="Brans" onclick="tabs_2(this);">Socks<p>16</p></a></li>
+					<li><a href="Brans" onclick="tabs_2(this);">Gloves<p>37</p></a></li>
+					<li><a href="Brans" onclick="tabs_2(this);">Hats &amp; Neckwear<p>15</p></a></li>
+					<li><a href="Brans" onclick="tabs_2(this);">Base Layers<p>27</p></a></li>
+					<li><a href="Brans" onclick="tabs_2(this);">Pants &amp; Leggings<p>44</p></a></li>
+					<li><a href="Brans" onclick="tabs_2(this);">Shorts<p>23</p></a></li>
+					<li><a href="Brans" onclick="tabs_2(this);">Boots<p>29</p></a></li>
+				</ul>
+			</div> 
+			<span>Price</span>
+			<div class="catalog_box_tab">
+				<div class="priceProductSlider">
+					<input type="text" id="rangePriceSlider" value="" name="range" />
+				</div>
+			</div>
+			<span>Color</span>
+			<div class="catalog_box_tab">
+				<div class="colorsProduct">
+				</div>
+			</div>
+			<span>Brands</span>
+			<div class="catalog_box_tab">
+				<ul>
+					<li><a href="all" onclick="tabs_2(this);" class="active">All<p>272</p></a></li>
+					<li><a href="all" onclick="tabs_2(this);">Adidas<p>27</p></a></li>
+					<li><a href="Brans" onclick="tabs_2(this);">Nike<p>22</p></a></li>
+					<li><a href="Brans" onclick="tabs_2(this);">Reebok<p>72</p></a></li>
+					<li><a href="Brans" onclick="tabs_2(this);">The North Face<p>32</p></a></li>
+					<li><a href="Brans" onclick="tabs_2(this);">Icebreacker<p>12</p></a></li>
+					<li><a href="Brans" onclick="tabs_2(this);">Columbia<p>52</p></a></li>
+					<li><a href="Brans" onclick="tabs_2(this);">Merrai<p>16</p></a></li>
+					<li><a href="Brans" onclick="tabs_2(this);">Salomon<p>16</p></a></li>
+					<li><a href="Brans" onclick="tabs_2(this);">Glaves<p>37</p></a></li>
+					<li><a href="Brans" onclick="tabs_2(this);">Roxy<p>15</p></a></li>
+				</ul>
+			</div> 
+		</div>
+		<div class="tab_2 active_2" id="all">
+			<div class="catalog_wrap">
+				<div class="catalog_wrap_box">
+					<img src="img/ctgImg-1.png" alt="Image">
+					<span class="nameProduct">
+					Salomon trail 20 running backpack
+					ss16
+					</span>
+					<p>Backpacks</p>
+					<span class="priceProduct">$10.50</span>
+				</div>
+				<div class="catalog_wrap_box">
+					<img src="img/ctgImg-2.png" alt="Image">
+					<span class="discout discout-blue">-20%</span>
+					<span class="nameProduct">
+					Salomon trail 20 running backpack
+					ss16
+					</span>
+					<p>Backpacks</p>
+					<span class="priceProduct">$10.50</span>
+				</div>
+				<div class="catalog_wrap_box">
+					<img src="img/ctgImg-3.png" alt="Image">
+					<span class="discout discout-green">-20%</span>
+					<span class="nameProduct">
+					Salomon trail 20 running backpack
+					ss16
+					</span>
+					<p>Backpacks</p>
+					<span class="priceProduct">$10.50</span>
+				</div>
+				<div class="catalog_wrap_box">
+					<img src="img/ctgImg-4.png" alt="Image">
+					<span class="nameProduct">
+					Salomon trail 20 running backpack 
+					ss16
+					</span>
+					<p>Backpacks</p>
+					<span class="priceProduct">$10.50</span>
+				</div>
+				<div class="catalog_wrap_box">
+					<img src="img/ctgImg-1.png" alt="Image">
+					<span class="discout discout-blue">-20%</span>
+					<span class="nameProduct">
+					Salomon trail 20 running backpack
+					ss16
+					</span>
+					<p>Backpacks</p>
+					<span class="priceProduct">$10.50</span>
+				</div>
+				<div class="catalog_wrap_box">
+					<img src="img/ctgImg-2.png" alt="Image">
+					<span class="discout discout-cyan">-20%</span>
+					<span class="discout">-20%</span>
+					<span class="nameProduct">
+					Salomon trail 20 running backpack
+					ss16
+					</span>
+					<p>Backpacks</p>
+					<span class="priceProduct">$10.50</span>
+				</div>
+				<div class="catalog_wrap_box">
+					<img src="img/ctgImg-3.png" alt="Image">
+					<span class="nameProduct">
+					Salomon trail 20 running backpack
+					ss16
+					</span>
+					<p>Backpacks</p>
+					<span class="priceProduct">$10.50</span>
+				</div>
+				<div class="catalog_wrap_box">
+					<img src="img/ctgImg-4.png" alt="Image">
+					<span class="discout discout-yellow">-20%</span>
+					<span class="nameProduct">
+					Salomon trail 20 running backpack 
+					ss16
+					</span>
+					<p>Backpacks</p>
+					<span class="priceProduct">$10.50</span>
+				</div>
+				<div class="catalog_wrap_box">
+					<img src="img/ctgImg-1.png" alt="Image">
+					<span class="nameProduct">
+					Salomon trail 20 running backpack
+					ss16
+					</span>
+					<p>Backpacks</p>
+					<span class="priceProduct">$10.50</span>
+				</div>
+				<div class="catalog_wrap_box">
+					<img src="img/ctgImg-2.png" alt="Image">
+					<span class="nameProduct">
+					Salomon trail 20 running backpack
+					ss16
+					</span>
+					<p>Backpacks</p>
+					<span class="priceProduct">$10.50</span>
+				</div>
+				<div class="catalog_wrap_box">
+					<img src="img/ctgImg-3.png" alt="Image">
+					<span class="discout discout-red">-20%</span>
+					<span class="nameProduct">
+					Salomon trail 20 running backpack
+					ss16
+					</span>
+					<p>Backpacks</p>
+					<span class="priceProduct">$10.50</span>
+				</div>
+				<div class="catalog_wrap_box">
+					<img src="img/ctgImg-4.png" alt="Image">
+					<span class="discout discout-blue">-20%</span>
+					<span class="nameProduct">
+					Salomon trail 20 running backpack 
+					ss16
+					</span>
+					<p>Backpacks</p>
+					<span class="priceProduct">$10.50</span>
+				</div>
+				<div class="catalog_wrap_box">
+					<img src="img/ctgImg-1.png" alt="Image">
+					<span class="discout discout-yellow">-20%</span>
+					<span class="nameProduct">
+					Salomon trail 20 running backpack
+					ss16
+					</span>
+					<p>Backpacks</p>
+					<span class="priceProduct">$10.50</span>
+				</div>
+				<div class="catalog_wrap_box">
+					<img src="img/ctgImg-2.png" alt="Image">
+					<span class="discout discout-cyan">-20%</span>
+					<span class="nameProduct">
+					Salomon trail 20 running backpack
+					ss16
+					</span>
+					<p>Backpacks</p>
+					<span class="priceProduct">$10.50</span>
+				</div>
+				<div class="catalog_wrap_box">
+					<img src="img/ctgImg-3.png" alt="Image">
+					<span class="discout discout-red">-20%</span>
+					<span class="nameProduct">
+					Salomon trail 20 running backpack
+					ss16
+					</span>
+					<p>Backpacks</p>
+					<span class="priceProduct">$10.50</span>
+				</div>
+				<div class="catalog_wrap_box">
+					<img src="img/ctgImg-4.png" alt="Image">
+					<span class="nameProduct">
+					Salomon trail 20 running backpack 
+					ss16
+					</span>
+					<p>Backpacks</p>
+					<span class="priceProduct">$10.50</span>
+				</div>
+			</div>
+		<a href="#" id="catalog_more">Load more</a>
+		</div>
+		<div class="tab_2" id="brans">
+			<div class="catalog_wrap">
+				<div class="catalog_wrap_box">
+					<img src="img/ctgImg-2.png" alt="Image">
+					<span class="discout discout-blue">-20%</span>
+					<span class="nameProduct">
+					Salomon trail 20 running backpack
+					ss16
+					</span>
+					<p>Backpacks</p>
+					<span class="priceProduct">$10.50</span>
+				</div>
+				<div class="catalog_wrap_box">
+					<img src="img/ctgImg-1.png" alt="Image">
+					<span class="discout discout-blue">-20%</span>
+					<span class="nameProduct">
+					Salomon trail 20 running backpack
+					ss16
+					</span>
+					<p>Backpacks</p>
+					<span class="priceProduct">$10.50</span>
+				</div>
+				<div class="catalog_wrap_box">
+					<img src="img/ctgImg-4.png" alt="Image">
+					<span class="discout discout-green">-20%</span>
+					<span class="nameProduct">
+					Salomon trail 20 running backpack
+					ss16
+					</span>
+					<p>Backpacks</p>
+					<span class="priceProduct">$10.50</span>
+				</div>
+				<div class="catalog_wrap_box">
+					<img src="img/ctgImg-3.png" alt="Image">
+					<span class="nameProduct">
+					Salomon trail 20 running backpack 
+					ss16
+					</span>
+					<p>Backpacks</p>
+					<span class="priceProduct">$10.50</span>
+				</div>
+				<div class="catalog_wrap_box">
+					<img src="img/ctgImg-1.png" alt="Image">
+					<span class="discout discout-blue">-20%</span>
+					<span class="nameProduct">
+					Salomon trail 20 running backpack
+					ss16
+					</span>
+					<p>Backpacks</p>
+					<span class="priceProduct">$10.50</span>
+				</div>
+				<div class="catalog_wrap_box">
+					<img src="img/ctgImg-2.png" alt="Image">
+					<span class="discout discout-cyan">-20%</span>
+					<span class="discout">-20%</span>
+					<span class="nameProduct">
+					Salomon trail 20 running backpack
+					ss16
+					</span>
+					<p>Backpacks</p>
+					<span class="priceProduct">$10.50</span>
+				</div>
+				<div class="catalog_wrap_box">
+					<img src="img/ctgImg-3.png" alt="Image">
+					<span class="nameProduct">
+					Salomon trail 20 running backpack
+					ss16
+					</span>
+					<p>Backpacks</p>
+					<span class="priceProduct">$10.50</span>
+				</div>
+				<div class="catalog_wrap_box">
+					<img src="img/ctgImg-4.png" alt="Image">
+					<span class="discout discout-yellow">-20%</span>
+					<span class="nameProduct">
+					Salomon trail 20 running backpack 
+					ss16
+					</span>
+					<p>Backpacks</p>
+					<span class="priceProduct">$10.50</span>
+				</div>
+				<div class="catalog_wrap_box">
+					<img src="img/ctgImg-1.png" alt="Image">
+					<span class="nameProduct">
+					Salomon trail 20 running backpack
+					ss16
+					</span>
+					<p>Backpacks</p>
+					<span class="priceProduct">$10.50</span>
+				</div>
+				<div class="catalog_wrap_box">
+					<img src="img/ctgImg-2.png" alt="Image">
+					<span class="nameProduct">
+					Salomon trail 20 running backpack
+					ss16
+					</span>
+					<p>Backpacks</p>
+					<span class="priceProduct">$10.50</span>
+				</div>
+				<div class="catalog_wrap_box">
+					<img src="img/ctgImg-3.png" alt="Image">
+					<span class="discout discout-red">-20%</span>
+					<span class="nameProduct">
+					Salomon trail 20 running backpack
+					ss16
+					</span>
+					<p>Backpacks</p>
+					<span class="priceProduct">$10.50</span>
+				</div>
+				<div class="catalog_wrap_box">
+					<img src="img/ctgImg-4.png" alt="Image">
+					<span class="discout discout-blue">-20%</span>
+					<span class="nameProduct">
+					Salomon trail 20 running backpack 
+					ss16
+					</span>
+					<p>Backpacks</p>
+					<span class="priceProduct">$10.50</span>
+				</div>
+				<div class="catalog_wrap_box">
+					<img src="img/ctgImg-1.png" alt="Image">
+					<span class="discout discout-yellow">-20%</span>
+					<span class="nameProduct">
+					Salomon trail 20 running backpack
+					ss16
+					</span>
+					<p>Backpacks</p>
+					<span class="priceProduct">$10.50</span>
+				</div>
+				<div class="catalog_wrap_box">
+					<img src="img/ctgImg-2.png" alt="Image">
+					<span class="discout discout-cyan">-20%</span>
+					<span class="nameProduct">
+					Salomon trail 20 running backpack
+					ss16
+					</span>
+					<p>Backpacks</p>
+					<span class="priceProduct">$10.50</span>
+				</div>
+				<div class="catalog_wrap_box">
+					<img src="img/ctgImg-3.png" alt="Image">
+					<span class="discout discout-red">-20%</span>
+					<span class="nameProduct">
+					Salomon trail 20 running backpack
+					ss16
+					</span>
+					<p>Backpacks</p>
+					<span class="priceProduct">$10.50</span>
+				</div>
+				<div class="catalog_wrap_box">
+					<img src="img/ctgImg-4.png" alt="Image">
+					<span class="nameProduct">
+					Salomon trail 20 running backpack 
+					ss16
+					</span>
+					<p>Backpacks</p>
+					<span class="priceProduct">$10.50</span>
+				</div>
+			</div>
+		<a href="#" id="catalog_more">Load more</a>
+		</div>
+		</div>
+	</div>
+</div>
+	<!--Company Slider Section-->
+<div class="slider-company-section">
+	<div class="container">
+		<div class="slider_wrap">
+			<div class="slider_wrap_box">
+			<a href="#">
+				<i class="KRS KRS__Adidas"></i>
+			</a>
+			</div>
+			<div class="slider_wrap_box">
+			<a href="#">
+				<i class="KRS KRS__CocaCola"></i>
+			</a>
+			</div>
+			<div class="slider_wrap_box">
+			<a href="#">
+				<i class="KRS KRS__Puma"></i>
+			</a>
+			</div>
+			<div class="slider_wrap_box">
+			<a href="#">
+				<i class="KRS KRS__Kappa"></i>
+			</a>
+			</div>
+			<div class="slider_wrap_box">
+			<a href="#">
+				<i class="KRS KRS__Nokia"></i>
+			</a>
+			</div>
+			<div class="slider_wrap_box">
+			<a href="#">
+				<i class="KRS KRS__Nike"></i>
+			</a>
+			</div>
+		</div>
+	</div>
+</div>
+	<div class="footer-section">
+	<div class="container">
+		<div class="row">
+			<div class="footer_wrap">
+				<div class="footer_box footer_one_box col-lg-6 col-md-6 col-sm-6">
+					<span>Aboutus</span>
+					<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit iure <br>
+					perspiciatis fuga reiciendis magnam provident aut labore. Esse quis<br> 
+					alias repellat iste maiores dicta obcaecati!
+					</p>
+					<span>Joinus</span>
+					<ul>
+						<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+						<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+						<li><a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+						<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+						<li><a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+					</ul>
+				</div>
+				<div class="footer_box footer_all_box col-lg-2 col-md-2 col-sm-2">
+					<span>Custumes care</span>
+					<ul>
+						<li><a href="#">FAQ</a></li>
+						<li><a href="#">Contact Us</a></li>
+						<li><a href="#">My Account</a></li>
+						<li><a href="#">Hov to order</a></li>
+						<li><a href="#">Price beat promps</a></li>
+					</ul>
+				</div>
+				<div class="footer_box footer_all_box col-lg-2 col-md-2 col-sm-2">
+					<span>Order info</span>
+					<ul>
+						<li><a href="#">Order traccking</a></li>
+						<li><a href="#">Delivery &amp; features</a></li>
+						<li><a href="#">Gift vouchers</a></li>
+						<li><a href="#">Payment inforamtion</a></li>
+					</ul>
+				</div>
+				<div class="footer_box footer_all_box col-lg-2 col-md-2 col-sm-2">
+					<span>Company info</span>
+					<ul>
+						<li><a href="#">About us</a></li>
+						<li><a href="#">Careers</a></li>
+						<li><a href="#">secure shoping</a></li>
+						<li><a href="#">Privacu police</a></li>
+						<li><a href="#">Tems &amp; conditions</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+	<script type="text/javascript" src="js/function.js"></script>
+	<script type="text/javascript" src="js/catTab.js"></script>
+	<script>
+//Подключаем сторонние формы
+$('#catalogForm select').styler();
+//Подключаем сторонние формы
+
+		$(function () {
+
+			$("#rangePriceSlider").ionRangeSlider({
+				hide_min_max: true,
+				keyboard: true,
+				min: 0,
+				max: 327,
+				from: 12,
+				to: 317,
+				type: 'double',
+				step: 1,
+				prefix: "$",
+				grid: false,
+			});
+
+		});
+var deleteLink_ = document.querySelector('.catalog_box_tab');
+deleteLink_.addEventListener(
+	'click', stopDefAction, false
+);
+	</script>
+	<script type="text/javascript" src="js/wow.min.js"></script>
+	<script>
+		new WOW().init();
+	</script>
+</body>
+</html>
