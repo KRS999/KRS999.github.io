@@ -1,0 +1,12 @@
+@font-face {
+	font-family: 'Bold';
+	src: url(../fonts/HelveticaNeue/HelveticaNeue-Bold.otf);
+}
+@font-face {
+	font-family: 'Regular';
+	src: url(../fonts/HelveticaNeue/HelveticaNeue-Regular.otf);
+}
+@font-face {
+	font-family: 'Medium';
+	src: url(../fonts/HelveticaNeue/HelveticaNeue-Medium.otf);
+}
