@@ -76,7 +76,7 @@ a:focus {
   min-height: 670px;
   position: absolute;
   top: 0;
-  left: 55.7%;
+  left: 56%;
   z-index: 1;
   background: url(../img/lines.png) no-repeat;
 }
@@ -144,7 +144,7 @@ a:focus {
   padding-top: 190px;
   margin-left: 94px;
   position: absolute;
-  left: 55.7%;
+  left: 56%;
 }
 .header_mobile_slider_wrap {
   display: -webkit-box;
