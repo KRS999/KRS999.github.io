@@ -809,13 +809,19 @@ p {
     -webkit-flex-basis: 311px;
     -ms-flex-preferred-size: 311px;
   }
-  .features_wrap .features_boxs {
+  .features_wrap .features_boxs .features_box {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -moz-box;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
     justify-content: center;
     -webkit-box-pack: center;
     -webkit-justify-content: center;
     -ms-flex-pack: center;
-  }
-  .features_wrap .features_boxs .features_box {
     flex-basis: 555px;
     -webkit-flex-basis: 555px;
     -ms-flex-preferred-size: 555px;
