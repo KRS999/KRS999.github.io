@@ -393,10 +393,10 @@ p {
   display: -ms-flex;
   display: -o-flex;
   display: flex;
-  justify-content: space-between;
-  -webkit-box-pack: space-between;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: space-between;
+  justify-content: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   align-items: center;
   -webkit-box-align: center;
   -webkit-align-items: center;
@@ -404,6 +404,7 @@ p {
   flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
+  margin: 0 -10px;
 }
 .features_wrap .features_boxs .features_box {
   flex-basis: 300px;
@@ -413,6 +414,7 @@ p {
   overflow: hidden;
   position: relative;
   border-radius: 5px;
+  margin: 0 10px;
   box-shadow: 0 0 18px rgba(0, 0, 0, 0.3);
   padding: 37px 39px 30px 39px;
 }
