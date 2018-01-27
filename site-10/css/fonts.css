@@ -1,0 +1,28 @@
+@font-face {
+	font-family: 'Bold';
+	src: url(../fonts/Lato/Lato-Bold.ttf);
+}
+@font-face {
+	font-family: 'Regular';
+	src: url(../fonts/Lato/Lato-Regular.ttf);
+}
+@font-face {
+	font-family: 'LBlack';
+	src: url(../fonts/Lato/Lato-Black.ttf);
+}
+@font-face {
+	font-family: 'SemiBold';
+	src: url(../fonts/Lato/Lato-Semibold.ttf);
+}
+@font-face {
+	font-family: 'UTMBold';
+	src: url(../fonts/UTM/UTMAvoBold.ttf);
+}
+@font-face {
+	font-family: 'UTMIns';
+	src: url(../fonts/UTM/UTMHelvetIns.ttf);
+}
+@font-face {
+	font-family: 'ArialRegular';
+	src: url(../fonts/ArialRegular.ttf);
+}
