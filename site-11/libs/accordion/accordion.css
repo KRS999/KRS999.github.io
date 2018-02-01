@@ -1,0 +1,82 @@
+.accordion-menu {
+	width: 100%;
+	max-width: 615px;
+	margin-right: 15px;
+}
+.dropdownlink {
+	cursor: pointer;
+	display: block;
+	padding: 16px 15px 16px 45px;
+	background: #fff;
+	border: 1px solid #EFEFEF;
+	position: relative;
+	-webkit-transition: all 0.4s ease-out;
+	transition: all 0.4s ease-out;
+}
+.submenuItems {
+	display: none;
+	color: #7a7a7a;
+	font-size: 14px;
+	line-height: 24px;
+	padding-top: 50px;
+}
+.accordion-menu li {
+	position: relative;
+	margin-bottom: 40px;
+}
+.accordion-menu li:after {
+	content: '';
+	width: 70px;
+	height: 77px;
+	top: 0;
+	position: absolute;
+	background-image: url(./img/tabBeta.png);
+}
+.accordion-menu li.open .dropdownlink:after {
+	content: '';
+	width: 70px;
+	height: 77px;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	position: absolute;
+	display: block;
+	background: url(./img/tabBeta-focus.png);
+}
+.accordion-menu li.open .dropdownlink .icon-1 {
+	background-position: -102px 0;
+}
+.accordion-menu li.open .dropdownlink .icon-2 {
+	background-position: 0 -103px;
+}
+.accordion-menu li.open .dropdownlink .icon-3 {
+	background-position: -98px -53px;
+}
+.accordion-menu li .dropdownlink .icon {
+	top: 20px;
+	z-index: 3;
+	position: absolute;
+}
+.accordion-menu li .dropdownlink .icon-1 {
+	width: 24px;
+	height: 25px;
+	left: 22px;
+	background-position: 0 -53px;
+}
+.accordion-menu li .dropdownlink .icon-2 {
+	width: 28px;
+	height: 20px;
+	left: 21px;
+	background-position: -53px -103px;
+}
+.accordion-menu li .dropdownlink .icon-3 {
+	width: 24px;
+	height: 24px;
+	left: 22px;
+	background-position: -49px -53px;
+}
+.accordion-menu .title {
+	color: #34495e;
+	margin-left: 45px;
+	font: 18px "Bold", sans-serif;
+}
