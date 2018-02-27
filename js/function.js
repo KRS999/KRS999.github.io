@@ -1,9 +1,9 @@
 $(document).ready(function() {
 //Загрузить еще
-	$('#work-more').click(function(event) {
-		event.preventDefault();
-		$('#work-1').fadeIn();
-		$(this).hide();
+	$('#work-more').click(function(e) {
+		e.preventDefault();
+		$('#work-1').fadeToggle();
+		$("#work-more").toggleClass('open');
 	});
 //Загрузить еще
 	$('.nav-icon2').click(function(){
@@ -85,6 +85,7 @@ $(document).ready(function() {
 		  10000
 		);
 	}*/
+	$(".myTab").hashTabs() //Табы
 });
 
 
