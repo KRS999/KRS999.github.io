@@ -239,8 +239,13 @@ a {
 }
 .KRS__header p {
   color: #fff;
+  margin-bottom: 15px;
   font: 22px "Regular", sans-serif;
   line-height: 33px;
+}
+.KRS__header audio {
+  width: 100%;
+  max-width: 390px;
 }
 /*Второе меню*/
 .headhesive {
@@ -345,11 +350,11 @@ a {
 }
 #nav-icon2.open span:nth-child(5) {
   left: 5px;
-  top: 14px;
+  top: 13px;
 }
 #nav-icon2.open span:nth-child(6) {
   left: calc(45%);
-  top: 14px;
+  top: 13px;
 }
 /*Кнопка мини меню*/
 .myWork {
@@ -438,6 +443,9 @@ a {
 .myWork .site__wrap .site-12 {
   background-image: url(../img/site-12.jpg);
 }
+.myWork .site__wrap .site-13 {
+  background-image: url(../img/site-13.jpg);
+}
 .work-more {
   width: 100%;
   max-width: 150px;
@@ -448,12 +456,74 @@ a {
   transition: 1s;
   display: block;
   text-align: center;
+  position: relative;
   margin: 0 auto 30px auto;
   border: 1px solid #00B7F1;
+}
+.work-more:after {
+  content: '';
+  width: 12px;
+  height: 12px;
+  right: 20px;
+  top: 14px;
+  transition: 1s;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+  position: absolute;
+  background-image: url(../img/arrow.png);
 }
 .work-more:hover {
   color: #fff;
   background: #00B7F1;
+}
+.work-more.open:after {
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+.tabs-header {
+  overflow: none;
+  background: none;
+  padding: 0 15px;
+  margin-bottom: 30px;
+}
+.tabs-header ul {
+  justify-content: center;
+  width: auto;
+}
+.tabs-header ul li {
+  color: #8e8e8e;
+  transition: .5s;
+  margin-right: 20px;
+  border: 1px solid transparent;
+  text-transform: uppercase;
+  font: 16px "Bold", sans-serif;
+}
+.tabs-header ul li:last-child {
+  margin-right: 0;
+}
+.tabs-header ul li a {
+  color: inherit;
+  padding: 0;
+}
+.tabs-header ul li:hover {
+  color: #141414;
+  border-bottom: 2px solid #00B7F1;
+}
+.tabs-header .active {
+  color: #141414;
+  border-bottom: 2px solid #00B7F1;
+}
+.tabs-content {
+  padding: 0;
+}
+.empty {
+  color: #141415;
+  margin-bottom: 30px;
+  font: 16px "Bold", sans-serif;
 }
 .skills {
   min-height: 750px;
@@ -638,6 +708,10 @@ a {
 @media screen and (max-width: 400px) {
   .header__wrap .fixedHeaderRow {
     width: 90%;
+  }
+  .tabs-header ul li {
+    margin-right: 10px;
+    font-size: 14px;
   }
 }
 @media screen and (min-width: 767px) {
