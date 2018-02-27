@@ -10,9 +10,11 @@
 <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css">
 <link rel="stylesheet" type="text/css" href="css/normalize.css">
 <link rel="stylesheet" type="text/css" href="css/animate.css">
+<link rel="stylesheet" type="text/css" href="libs/tabs/tab.css">
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <link rel="stylesheet" type="text/css" href="css/component.css">
 <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="libs/tabs/tab.js"></script>
 <script type="text/javascript" src="libs/headhesive/headhesive.js"></script>
 <script type="text/javascript" src="libs/headhesive/helpers.js"></script>
 <script type="text/javascript" src="libs/PageScroll/PageScroll2id.min.js"></script>
@@ -56,9 +58,13 @@
 			</a></i>
 			</div>
 			<span class="wow fadeInLeft">KRS999</span>
-				<p class="wow fadeInRight">
+			<p class="wow fadeInRight">
 				Разработка сайтов любой сложности.
-				</p>
+			</p>
+			  <audio controls autoplay>
+				<source src="audio/DJ Hush - Harlem Shake.mp3" type="audio/mpeg">
+				Тег audio не поддерживается вашим браузером.
+			  </audio>
 			</div>
 		</div>
     </div>
@@ -67,96 +73,124 @@
 	<div class="container">
 		<span class="wow fadeInUp">Мои работы</span>
 		<div class="row">
-			<div class="myWork_wrap">
-				<div class="myWork__box col-md-4 col-sm-6 wow rotateInUpLeft">
-					<div class="site__wrap">
-						<a href="KRS999.github.io/site-1/" target="_blank">
-						<div class="site site-1"></div>
-						</a>
-					</div>
+			<div class="tabs_wrap">
+				<div class="tabs-header">
+				   <ul>
+					  <li class="active"><a href="#" tab-id="makeup">Вёрстка</a></li>
+					  <li><a href="#" tab-id="freelancing">Фриланс</a></li>
+					  <li><a href="#" tab-id="projects">Проекты</a></li>
+					</ul>
 				</div>
-				<div class="myWork__box col-md-4 col-sm-6 wow rotateInUpLeft">
-					<div class="site__wrap">
-						<a href="KRS999.github.io/site-2/" target="_blank">
-						<div class="site site-2"></div>
-						</a>
-					</div>
-				</div>
-				<div class="myWork__box col-md-4 col-sm-6 wow rotateInUpLeft">
-					<div class="site__wrap">
-						<a href="KRS999.github.io/site-3/" target="_blank">
-						<div class="site site-3"></div>
-						</a>
-					</div>
-				</div>
-				<div class="myWork__box col-md-4 col-sm-6 wow rotateInUpLeft">
-					<div class="site__wrap">
-						<a href="KRS999.github.io/site-4/" target="_blank">
-						<div class="site site-4"></div>
-						</a>
-					</div>
-				</div>
-				<div class="myWork__box col-md-4 col-sm-6 wow rotateInUpLeft">
-					<div class="site__wrap">
-						<a href="KRS999.github.io/site-5/" target="_blank">
-						<div class="site site-5"></div>
-						</a>
-					</div>
-				</div>
-				<div class="myWork__box col-md-4 col-sm-6 wow rotateInUpLeft">
-					<div class="site__wrap">
-						<a href="KRS999.github.io/site-6/" target="_blank">
-						<div class="site site-6"></div>
-						</a>
-					</div>
-				</div>
-			</div>
-			<div class="work-1" id="work-1" style="display: none;">
-				<div class="myWork__box col-md-4 col-sm-6">
-					<div class="site__wrap">
-						<a href="KRS999.github.io/site-7/" target="_blank">
-						<div class="site site-7"></div>
-						</a>
-					</div>
-				</div>
-				<div class="myWork__box col-md-4 col-sm-6">
-					<div class="site__wrap">
-						<a href="KRS999.github.io/site-8/" target="_blank">
-						<div class="site site-8"></div>
-						</a>
-					</div>
-				</div>
-				<div class="myWork__box col-md-4 col-sm-6">
-					<div class="site__wrap">
-						<a href="KRS999.github.io/site-9/" target="_blank">
-						<div class="site site-9"></div>
-						</a>
-					</div>
-				</div>
-				<div class="myWork__box col-md-4 col-sm-6">
-					<div class="site__wrap">
-						<a href="KRS999.github.io/site-10/" target="_blank">
-						<div class="site site-10"></div>
-						</a>
-					</div>
-				</div>
-				<div class="myWork__box col-md-4 col-sm-6">
-					<div class="site__wrap">
-						<a href="KRS999.github.io/site-11/" target="_blank">
-						<div class="site site-11"></div>
-						</a>
-					</div>
-				</div>
-				<div class="myWork__box col-md-4 col-sm-6">
-					<div class="site__wrap">
-						<a href="KRS999.github.io/site-12/" target="_blank">
-						<div class="site site-12"></div>
-						</a>
-					</div>
+				<div class="tabs-content">
+				   <div tab-id="makeup" class="tab active">
+						<div class="myWork__box col-md-4 col-sm-6 wow rotateInUpLeft">
+							<div class="site__wrap">
+								<a href="KRS999.github.io/site-1/" target="_blank">
+								<div class="site site-1"></div>
+								</a>
+							</div>
+						</div>
+						<div class="myWork__box col-md-4 col-sm-6 wow rotateInUpLeft">
+							<div class="site__wrap">
+								<a href="KRS999.github.io/site-2/" target="_blank">
+								<div class="site site-2"></div>
+								</a>
+							</div>
+						</div>
+						<div class="myWork__box col-md-4 col-sm-6 wow rotateInUpLeft">
+							<div class="site__wrap">
+								<a href="KRS999.github.io/site-3/" target="_blank">
+								<div class="site site-3"></div>
+								</a>
+							</div>
+						</div>
+						<div class="myWork__box col-md-4 col-sm-6 wow rotateInUpLeft">
+							<div class="site__wrap">
+								<a href="KRS999.github.io/site-4/" target="_blank">
+								<div class="site site-4"></div>
+								</a>
+							</div>
+						</div>
+						<div class="myWork__box col-md-4 col-sm-6 wow rotateInUpLeft">
+							<div class="site__wrap">
+								<a href="KRS999.github.io/site-5/" target="_blank">
+								<div class="site site-5"></div>
+								</a>
+							</div>
+						</div>
+						<!--
+						<div class="myWork__box col-md-4 col-sm-6 wow rotateInUpLeft">
+							<div class="site__wrap">
+								<a href="KRS999.github.io/site-6/" target="_blank">
+								<div class="site site-6"></div>
+								</a>
+							</div>
+						</div>
+						-->
+						<div class="myWork__box col-md-4 col-sm-6 wow rotateInUpLeft">
+							<div class="site__wrap">
+								<a href="KRS999.github.io/site-7/" target="_blank">
+								<div class="site site-7"></div>
+								</a>
+							</div>
+						</div>
+						<div class="work-1" id="work-1" style="display: none;">
+							<div class="myWork__box col-md-4 col-sm-6">
+								<div class="site__wrap">
+									<a href="KRS999.github.io/site-8/" target="_blank">
+									<div class="site site-8"></div>
+									</a>
+								</div>
+							</div>
+							<div class="myWork__box col-md-4 col-sm-6">
+								<div class="site__wrap">
+									<a href="KRS999.github.io/site-9/" target="_blank">
+									<div class="site site-9"></div>
+									</a>
+								</div>
+							</div>
+							<div class="myWork__box col-md-4 col-sm-6">
+								<div class="site__wrap">
+									<a href="KRS999.github.io/site-10/" target="_blank">
+									<div class="site site-10"></div>
+									</a>
+								</div>
+							</div>
+							<div class="myWork__box col-md-4 col-sm-6">
+								<div class="site__wrap">
+									<a href="KRS999.github.io/site-11/" target="_blank">
+									<div class="site site-11"></div>
+									</a>
+								</div>
+							</div>
+							<div class="myWork__box col-md-4 col-sm-6">
+								<div class="site__wrap">
+									<a href="KRS999.github.io/site-12/" target="_blank">
+									<div class="site site-12"></div>
+									</a>
+								</div>
+							</div>
+							<div class="myWork__box col-md-4 col-sm-6">
+								<div class="site__wrap">
+									<a href="KRS999.github.io/site-13/" target="_blank">
+									<div class="site site-13"></div>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="myWork__box col-lg-12 col-md-12 col-sm-12 col-xs-12">
+							<a href="" id="work-more" class="work-more wow fadeInUp" data-wow-delay=".5s">Ещё</a>
+						</div>
+				   </div>
+				   <div tab-id="freelancing" class="tab">
+				   		<p class="empty">Пусто &#58;&#41;</p>
+				   </div>
+				   <div tab-id="projects" class="tab">
+				   		<p class="empty">Пусто &#58;&#41;</p>
+				   </div>
 				</div>
 			</div>
 		</div>
-		<a href="" id="work-more" class="work-more wow fadeInUp" data-wow-delay=".5s">Ещё</a>
 	</div>
 </div>
 	<div class="skills oh">
