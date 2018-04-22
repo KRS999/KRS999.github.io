@@ -1,0 +1,35 @@
+/*Hammersmith*/
+@font-face {
+	font-family: 'Hammersmith';
+	src: url(../fonts/Hammersmith/HammersmithOne-Regular.ttf);
+}
+/*Playfair*/
+@font-face {
+	font-family: 'PlayfairDisplay-Black';
+	src: url(../fonts/Playfair/PlayfairDisplay-Black.ttf);
+}
+@font-face {
+	font-family: 'PlayfairDisplay-Bold';
+	src: url(../fonts/Playfair/PlayfairDisplay-Bold.ttf);
+}
+@font-face {
+	font-family: 'PlayfairDisplay-Regular';
+	src: url(../fonts/Playfair/PlayfairDisplay-Regular.ttf);
+}
+/*Roboto*/
+@font-face {
+	font-family: 'Roboto-Black';
+	src: url(../fonts/Roboto/Roboto-Black.ttf);
+}
+@font-face {
+	font-family: 'Roboto-Light';
+	src: url(../fonts/Roboto/Roboto-Light.ttf);
+}
+@font-face {
+	font-family: 'Roboto-Regular';
+	src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+@font-face {
+	font-family: 'Roboto-Thin';
+	src: url(../fonts/Roboto/Roboto-Thin.ttf);
+}
