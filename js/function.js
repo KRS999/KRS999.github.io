@@ -2,14 +2,14 @@ $(document).ready(function() {
 //Загрузить еще
 	$('#work-more').click(function(e) {
 		e.preventDefault();
-		$('#work-1').fadeToggle();
+		$('#work-1').slideToggle(1000);
 		$("#work-more").toggleClass('open');
 	});
 //Загрузить еще
-	$('.nav-icon2').click(function(){
-		if('.nav-icon2 === click'){
+	$('.nav-icon3').click(function(){
+		if('.nav-icon3 === click'){
 			$(".menu").fadeToggle();
-			$(".nav-icon2, #nav-icon2").toggleClass('open');
+			$(".nav-icon3").toggleClass('open');
 			$(".menu ul li").addClass('animated bounceInUp');
 			$(".menu ul li").attr('data-wow-delay', '0.5s');
 		}else{
@@ -17,8 +17,8 @@ $(document).ready(function() {
 		}
 	});
 	$(window).resize(function() {		
-		if ($(window).width() > 767) {
-			$('.nav-icon2').removeClass('open'); //Возвращаем состояния иконки меню после увелечения экрана
+		if ($(window).width() > 576) {
+			$('.nav-icon3').removeClass('open'); //Возвращаем состояния иконки меню после увелечения экрана
 			$('.menu').removeAttr('style'); //Скрываем меню после увл. экрана
 			$(".menu ul li").removeClass('animated bounceInUp');
 		 }
@@ -91,7 +91,7 @@ $(document).ready(function() {
 
 var header = new Headhesive('.header__wrap');
 var options = {
-  offset: 100, // ставим расстояния появляния второго меню,
+  offset: 50, // ставим расстояния появляния второго меню,
 
   // If using a DOM element, we can choose which side to use as offset (top|bottom)
   offsetSide: 'top',
