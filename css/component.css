@@ -512,7 +512,7 @@ nav a:focus {
 	left: 50%;
 	width: 100px;
 	height: 100px;
-	border: 2px solid rgba(0,183,241,.9);
+	border: 2px solid rgba(28,176,128,.9);
 	border-radius: 50%;
 	content: '';
 	opacity: 0;
