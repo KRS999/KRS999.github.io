@@ -228,7 +228,7 @@ a:focus {
   background-repeat: no-repeat;
   border: 2px solid #1CB080;
   background-position: center center;
-  background-image: url(../img/KRS999.jpg);
+  background-image: url(https://avatars0.githubusercontent.com/u/31311195?s=460&v=4);
 }
 .KRS__header span {
   color: #fff;
@@ -430,6 +430,9 @@ a:focus {
 }
 .myWork .site__wrap .site-15 {
   background-image: url(../img/site-15.jpg);
+}
+.myWork .site__wrap .site-16 {
+  background-image: url(../img/site-16.jpg);
 }
 .work-more {
   width: 50px;
