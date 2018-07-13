@@ -1,152 +1,88 @@
-$(document).ready(function() {
-//Загрузить еще
-	$('#work-more').click(function(e) {
-		e.preventDefault();
-		$('#work-1').slideToggle(1000);
-		$("#work-more").toggleClass('open');
-	});
-//Загрузить еще
-	$('.nav-icon3').click(function(){
-		if('.nav-icon3 === click'){
-			$(".menu").fadeToggle();
-			$(".nav-icon3").toggleClass('open');
-			$(".menu ul li").addClass('animated bounceInUp');
-			$(".menu ul li").attr('data-wow-delay', '0.5s');
-		}else{
-			return;
+$(function(){
+  /*--------- show and hide the menu  ---*/
+	$('.button').on("click", function(){
+		$('.main').toggleClass('content_off');
+		if($('body').hasClass('nav_is_visible') == true){
+			$('body').removeClass('nav_is_visible');
+			$('.button').removeClass('close');
+		}
+		else{
+			$('body').addClass('nav_is_visible');
+			$('.button').addClass('close');
 		}
 	});
-	$(window).resize(function() {		
-		if ($(window).width() > 576) {
-			$('.nav-icon3').removeClass('open'); //Возвращаем состояния иконки меню после увелечения экрана
-			$('.menu').removeAttr('style'); //Скрываем меню после увл. экрана
-			$(".menu ul li").removeClass('animated bounceInUp');
-		 }
-	});
-	/*$(window).scroll(function() {		
-		if ($(window).height() > 767) {
-			$('#nav-icon2, .header__wrap .nav-icon2').removeClass('open'); //Возвращаем состояния иконки меню после пролистывания вниз
-			$('.menu').removeAttr('style'); //Скрываем меню после пролистывания вниз
-		 }
-	});*/
-	//Скролл до блоков
-	$(".menu a, .logo a").mPageScroll2id({
-	offset : 100 //расстояние
-	});
+	$('body').addClass('work_is_visible');
 	
-	//Проценты Skills
-	$(window).scroll(function() {
-		if ($(window).height() < 1800) {
-		var percent_number_step = $.animateNumber.numberStepFactories.append('%');
-		$('#html__, #css__').animateNumber(
-		  {
-			number: 50,
-
-			easing: 'easeInQuad',
-
-			numberStep: percent_number_step
-		  },
-		  10000
-		);
-
-		$('#js__').animateNumber(
-		  {
-			number: 20,
-
-			easing: 'easeInQuad',
-
-			numberStep: percent_number_step
-		  },
-		  10000
-		);
+	function removeClasses() {
+		$(".menu ul li").each(function() {
+			var custom_class = $(this).find('a').data('class');
+			$('body').removeClass(custom_class);
+		});
 	}
+  
+	$('.menu_links a').on('click',function(e){
+		e.preventDefault();
+		removeClasses();
+		var custom_class = $(this).data('class');
+		$('body').addClass(custom_class);
+		menuLinkActive(this);
+	});
 });
-	/*if(window.innerHeight == 2000){
-	var percent_number_step = $.animateNumber.numberStepFactories.append('%');
-	$('#html__, #css__').animateNumber(
-		  {
-			number: 50,
-
-			easing: 'easeInQuad',
-
-			numberStep: percent_number_step
-		  },
-		  10000
-		);
-
-		$('#js__').animateNumber(
-		  {
-			number: 20,
-
-			easing: 'easeInQuad',
-
-			numberStep: percent_number_step
-		  },
-		  10000
-		);
-	}*/
-	$(".myTab").hashTabs() //Табы
+/*
+$('.button').click(function(){
+	$('.menu').toggleClass('menu__on');
 });
-
-
-var header = new Headhesive('.header__wrap');
-var options = {
-  offset: 50, // ставим расстояния появляния второго меню,
-
-  // If using a DOM element, we can choose which side to use as offset (top|bottom)
-  offsetSide: 'top',
-
-  // Классы
-  classes: {
-
-    // Класс для изменения второго меню
-    clone: 'headhesive',
-
-    // Класс для появляния меню-2
-    stick: 'headhesive--stick',
-
-    // Unstick class
-    unstick: 'headhesive--unstick'
-  },
-
-  // Throttle scroll event to fire every 250ms to improve performace
-  throttle: 250,
-
-  // Callbacks
-  onInit:    function () {},
-  onStick:   function () {},
-  onUnstick: function () {},
-  onDestroy: function () {},
+*/
+//Добавить класс Active на ссылку
+function menuLinkActive(e){
+var menuLinks = $('.menu_links a');
+	for(var i = 0; i < menuLinks.length; i++){
+		$(menuLinks[i]).removeClass('active');
+	}
+	$(e).addClass('active');
 }
-header.destroy();
-var header = new Headhesive('.header__wrap', options);
-/*$(window).scroll(function() {
-    if ($(this).scrollTop() > 100) {
-       $('.menu-header-2').removeAttr('style');
-    }
-    if ($(this).scrollTop() < 100) { //Скрываем меню при 100 Offset
-       $('.menu-header').removeAttr('style');
-    }
-});*/
-
-/*Функция для отображения текущей даты в Footer*/
-
-if (/SymbOS/.test(window.navigator.userAgent)) {
-    $('.headhesive').hide();
+//Мои работы
+$(document).ready(function(){
+	function createWork(img, href, alt){
+		var workHref = 'https://vk.com';
+		var workImg = 'img/site-3.jpg'; //Путь к картинкам
+		var workAlt = 'img/site-3.jpg'; //Названия картинок
+		var workLinks = $('<a href= "' + href + '" target="_blank"></a>').wrapInner('<img src="' + img + '" alt="' + alt + '">');//Создаем ссылку с картинкой
+		var workItem = $('<div class="col-lg-4 col-md-6 my__work_item">').wrapInner(workLinks); //Создаем Items
+		var workList = $('.my_work').append(workItem);//Добавляем Items в блок Работ
+	}
 	
-}
-//alert(window.navigator.userAgent)
-/*if(device.windows()){
-	$('.headhesive').hide();
-}*/
-var d = new Date();
-var copyYear = d.getFullYear();//год
+	workBase.forEach(function(work){
+		createWork(work.img, work.href, work.alt);
+	});
+});
+//ProgressBar
+$('#js').LineProgressbar({
+	percentage: 30,
+	height: '15px',
+	fillBackgroundColor: '#F7DF1E'
+});
 
-function copyYears() {
-  if (copyYear != 2017){ //Выводим дату если Переменная copyYear не равно 2017
-    document.getElementById('copyYear').innerHTML = ' - ' + copyYear;
-  }else{
-    document.getElementById('copyYear').innerHTML = '';
-  }
-}
-copyYears(); //Запускаем функцию
+$('#jq').LineProgressbar({
+	percentage: 15,
+	height: '15px',
+	fillBackgroundColor: '#0768AC'
+});
+
+$('#rt').LineProgressbar({
+	percentage: 0,
+	height: '15px',
+	fillBackgroundColor: '##00D8FF'
+});
+
+$('#html').LineProgressbar({
+	percentage: 50,
+	height: '15px',
+	fillBackgroundColor: '#E44D26'
+});
+
+$('#css').LineProgressbar({
+	percentage: 50,
+	height: '15px',
+	fillBackgroundColor: '#0170BA'
+});
