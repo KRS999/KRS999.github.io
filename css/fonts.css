@@ -1,36 +1,12 @@
 @font-face {
-	font-family: 'Bold';
-	src: url(../fonts/Raleway/Raleway-Bold.ttf);
+	font-family: 'Oswald-Bold';
+	src: url(../fonts/Oswald/Oswald-Bold.ttf);
 }
 @font-face {
-	font-family: 'Regular';
-	src: url(../fonts/Raleway/Raleway-Regular.ttf);
+	font-family: 'Oswald-Regular';
+	src: url(../fonts/Oswald/Oswald-Regular.ttf);
 }
 @font-face {
-	font-family: 'Light';
-	src: url(../fonts/Raleway/Raleway-Light.ttf);
-}
-@font-face {
-	font-family: 'SemiBold';
-	src: url(../fonts/Raleway/Raleway-SemiBold.ttf);
-}
-@font-face {
-	font-family: 'Medium';
-	src: url(../fonts/Raleway/Raleway-Medium.ttf);
-}
-@font-face {
-	font-family: 'OpenSansBold';
-	src: url(../fonts/OpenSans/OpenSansBold.ttf);
-}
-@font-face {
-	font-family: 'OpenSansRegular';
-	src: url(../fonts/OpenSans/OpenSansRegular.ttf);
-}
-@font-face {
-	font-family: 'Cardo-Italic';
-	src: url(../fonts/Cardo-Italic.ttf);
-}
-@font-face {
-	font-family: 'Rewritten';
-	src: url(../fonts/Rewritten.ttf);
+	font-family: 'Oswald-Light';
+	src: url(../fonts/Oswald/Oswald-Light.ttf);
 }
