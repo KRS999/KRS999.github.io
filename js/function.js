@@ -86,3 +86,10 @@ $('#css').LineProgressbar({
 	height: '15px',
 	fillBackgroundColor: '#0170BA'
 });
+
+//Preloader
+function pr(){
+	$('.transition-loader').fadeOut();
+}
+
+var timer = setTimeout(pr, 6000);
