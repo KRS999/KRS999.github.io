@@ -48,7 +48,7 @@ $(document).ready(function(){
 		var workImg = 'img/site-3.jpg'; //Путь к картинкам
 		var workAlt = 'img/site-3.jpg'; //Названия картинок
 		var workLinks = $('<a href= "' + href + '" target="_blank"></a>').wrapInner('<img src="' + img + '" alt="' + alt + '">');//Создаем ссылку с картинкой
-		var workItem = $('<div class="col-lg-4 col-md-6 my__work_item">').wrapInner(workLinks); //Создаем Items
+		var workItem = $('<div class="col-lg-4 col-md-6 col-sm-6 my__work_item">').wrapInner(workLinks); //Создаем Items
 		var workList = $('.my_work').append(workItem);//Добавляем Items в блок Работ
 	}
 	
