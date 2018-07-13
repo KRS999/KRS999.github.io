@@ -424,7 +424,7 @@ body.nav_is_visible .menu {
 }
 @media screen and (max-width: 768px) {
   .transition-loader-inner label {
-    font-size: .7em;
+    font-size: .6em;
   }
 }
 @media screen and (max-width: 360px) {
