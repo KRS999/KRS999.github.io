@@ -88,8 +88,8 @@ $('#css').LineProgressbar({
 });
 
 //Preloader
-function pr(){
+$(function(){
+$(window).on('load', function(){
 	$('.transition-loader').fadeOut();
-}
-
-var timer = setTimeout(pr, 6000);
+});
+});
