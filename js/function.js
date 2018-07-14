@@ -43,17 +43,22 @@ var menuLinks = $('.menu_links a');
 }
 //Мои работы
 $(document).ready(function(){
-	function createWork(img, href, alt){
-		var workHref = 'https://vk.com';
-		var workImg = 'img/site-3.jpg'; //Путь к картинкам
-		var workAlt = 'img/site-3.jpg'; //Названия картинок
-		var workLinks = $('<a href= "' + href + '" target="_blank"></a>').wrapInner('<img src="' + img + '" alt="' + alt + '">');//Создаем ссылку с картинкой
+	function createWork(img, href){
+		
+		//var preloader = $('<div class="transition-loader work-items-loader">').wrapInner('<div class="transition-loader-inner"><label></label><label></label><label></label><label></label><label></label><label></label></div');
+		
+		var worksImg = $('<div class="works__item_img">');//Создаем Div для картинок
+		//worksImg.append(preloader);
+		var workLinks = $('<a href= "' + href + '" target="_blank"></a>').wrapInner(worksImg);//Создаем ссылку с картинкой
 		var workItem = $('<div class="col-lg-4 col-md-6 col-sm-6 my__work_item">').wrapInner(workLinks); //Создаем Items
+		$(worksImg).css({
+			'backgroundImage' : 'url("' + img + '")'
+		});
 		var workList = $('.my_work').append(workItem);//Добавляем Items в блок Работ
 	}
 	
 	workBase.forEach(function(work){
-		createWork(work.img, work.href, work.alt);
+		createWork(work.img, work.href);
 	});
 });
 //ProgressBar
@@ -88,10 +93,12 @@ $('#css').LineProgressbar({
 });
 
 //Preloader
+var prealoaderTime = 3000;
 $(function preloader(){
 	$(window).on('load', function(){
 		var timer = setTimeout(function(){
 			$('.transition-loader').fadeOut();
-		}, 3000);
+		}, prealoaderTime);
 	});
 });
+
