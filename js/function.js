@@ -92,6 +92,6 @@ $(function preloader(){
 	$(window).on('load', function(){
 		var timer = setTimeout(function(){
 			$('.transition-loader').fadeOut();
-		}, 5000);
+		}, 3000);
 	});
 });
