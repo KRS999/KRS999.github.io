@@ -93,12 +93,11 @@ $('#css').LineProgressbar({
 });
 
 //Preloader
-var prealoaderTime = 3000;
 $(function preloader(){
 	$(window).on('load', function(){
 		var timer = setTimeout(function(){
 			$('.transition-loader').fadeOut();
-		}, prealoaderTime);
+		}, 3000);
 	});
 });
 
