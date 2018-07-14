@@ -334,7 +334,7 @@ body.nav_is_visible .menu {
   transform: translateX(0);
   z-index: 5000;
 }
-.transition-loader {
+.global-loader {
   z-index: 99999;
   position: relative;
   display: -webkit-box;
@@ -353,7 +353,7 @@ body.nav_is_visible .menu {
   background-attachment: fixed;
   background-image: url(../img/bg.jpg);
 }
-.transition-loader:before {
+.global-loader:before {
   content: '';
   width: 100%;
   height: 100%;
@@ -376,6 +376,7 @@ body.nav_is_visible .menu {
   margin-bottom: 30px;
 }
 .my_work .my__work_item a {
+  height: 200px;
   padding: 6px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -387,25 +388,40 @@ body.nav_is_visible .menu {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  border-radius: 5px;
   overflow: hidden;
+  position: relative;
+  border-radius: 6px;
   -webkit-box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
   background-color: rgba(255, 255, 255, 0.2);
 }
-.my_work .my__work_item a:hover img {
+.my_work .my__work_item a:hover .works__item_img {
   -ms-flex-item-align: center;
   align-self: center;
-  -webkit-transform: scale(2);
-  transform: scale(2);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
 }
-.my_work .my__work_item a img {
+.my_work .my__work_item a .works__item_img {
   width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   border-radius: 5px;
-  -webkit-transition: -webkit-transform 1s;
-  transition: -webkit-transform 1s;
-  transition: transform 1s;
-  transition: transform 1s, -webkit-transform 1s;
+  -webkit-transition: -webkit-transform .6s;
+  transition: -webkit-transform .6s;
+  transition: transform .6s;
+  transition: transform .6s, -webkit-transform .6s;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgba(29, 27, 31, 0.5);
+}
+.my_work .my__work_item a .works__item_img .transition-loader-inner {
+  z-index: -1;
+  position: relative;
 }
 .my_skill .skill__title {
   display: block;
