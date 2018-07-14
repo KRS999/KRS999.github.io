@@ -90,7 +90,8 @@ $('#css').LineProgressbar({
 //Preloader
 $(function preloader(){
 	$(window).on('load', function(){
-		$('.transition-loader').fadeOut();
+		var timer = setTimeout(function(){
+			$('.transition-loader').fadeOut();
+		}, 5000);
 	});
 });
-var timer = setTimeout(preloader, 6000);
