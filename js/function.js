@@ -43,7 +43,7 @@ var menuLinks = $('.menu_links a');
 }
 $(document).ready(function(){
 	var empty1 = $('.empty-1');
-	var empty2 = $('.empty-2');
+//	var empty2 = $('.empty-2');
 	var empty3 = $('.empty-3');
 //Мои работы
 	function createWork(img, href){
