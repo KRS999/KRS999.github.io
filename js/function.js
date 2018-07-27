@@ -42,6 +42,9 @@ var menuLinks = $('.menu_links a');
 	$(e).addClass('active');
 }
 $(document).ready(function(){
+	var empty1 = $('.empty-1');
+	var empty2 = $('.empty-2');
+	var empty3 = $('.empty-3');
 //Мои работы
 	function createWork(img, href){
 		
@@ -54,6 +57,9 @@ $(document).ready(function(){
 		$(worksImg).css({
 			'backgroundImage' : 'url("' + img + '")'
 		});
+		if(workItem.length > 0){
+			empty1.hide();
+		}
 		var workList = $('.my_work').append(workItem);//Добавляем Items в блок Работ
 	}
 	
@@ -65,7 +71,6 @@ $(document).ready(function(){
 	function createProject(img, href){
 		
 		//var preloader = $('<div class="transition-loader work-items-loader">').wrapInner('<div class="transition-loader-inner"><label></label><label></label><label></label><label></label><label></label><label></label></div');
-		var empty = $('.empty');//Для всех общий
 		var projectImg = $('<div class="works__item_img">');//Создаем Div для картинок
 		//worksImg.append(preloader);
 		var projectLinks = $('<a href= "' + href + '" target="_blank"></a>').wrapInner(projectImg);//Создаем ссылку с картинкой
@@ -73,9 +78,9 @@ $(document).ready(function(){
 		$(projectImg).css({
 			'backgroundImage' : 'url("' + img + '")'
 		});
-		console.log(empty.length);
+		console.log(empty3.length);
 		if(projectItem.length > 0){ //Скрываем empty если Item больше нуля
-			empty.hide();
+			empty3.hide();
 		}
 		var projectList = $('.my_project').append(projectItem);//Добавляем Items в блок Работ
 	}
