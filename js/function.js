@@ -41,8 +41,8 @@ var menuLinks = $('.menu_links a');
 	}
 	$(e).addClass('active');
 }
-//Мои работы
 $(document).ready(function(){
+//Мои работы
 	function createWork(img, href){
 		
 		//var preloader = $('<div class="transition-loader work-items-loader">').wrapInner('<div class="transition-loader-inner"><label></label><label></label><label></label><label></label><label></label><label></label></div');
@@ -59,6 +59,29 @@ $(document).ready(function(){
 	
 	workBase.forEach(function(work){
 		createWork(work.img, work.href);
+	});
+	
+	//Мои проекты
+	function createProject(img, href){
+		
+		//var preloader = $('<div class="transition-loader work-items-loader">').wrapInner('<div class="transition-loader-inner"><label></label><label></label><label></label><label></label><label></label><label></label></div');
+		var empty = $('.empty');//Для всех общий
+		var projectImg = $('<div class="works__item_img">');//Создаем Div для картинок
+		//worksImg.append(preloader);
+		var projectLinks = $('<a href= "' + href + '" target="_blank"></a>').wrapInner(projectImg);//Создаем ссылку с картинкой
+		var projectItem = $('<div class="col-lg-4 col-md-6 col-sm-6 my__work_item">').wrapInner(projectLinks); //Создаем Items
+		$(projectImg).css({
+			'backgroundImage' : 'url("' + img + '")'
+		});
+		console.log(empty.length);
+		if(projectItem.length > 0){ //Скрываем empty если Item больше нуля
+			empty.hide();
+		}
+		var projectList = $('.my_project').append(projectItem);//Добавляем Items в блок Работ
+	}
+	
+	projectBase.forEach(function(project){
+		createProject(project.img, project.href);
 	});
 });
 //ProgressBar
@@ -100,4 +123,3 @@ $(function preloader(){
 		}, 3000);
 	});
 });
-
