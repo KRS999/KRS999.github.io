@@ -78,8 +78,10 @@ var workBase = [
 ];
 
 var projectBase = [
+	/*
 	{
 		img: 'img/site-1.jpg',
 		href: 'KRS999.github.io/site-1/'
 	},
+	*/
 ];
