@@ -63,6 +63,7 @@ $(document).ready(function(){
 		var workList = $('.my_work').append(workItem);//Добавляем Items в блок Работ
 	}
 	
+	workBase.reverse();
 	workBase.forEach(function(work){
 		createWork(work.img, work.href);
 	});
