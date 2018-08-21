@@ -396,16 +396,23 @@ body.nav_is_visible .menu {
   overflow: hidden;
   position: relative;
   border-radius: 6px;
+  -webkit-transition: background 0.6s, -webkit-box-shadow 0.6s;
+  transition: background 0.6s, -webkit-box-shadow 0.6s;
+  transition: background 0.6s, box-shadow 0.6s;
+  transition: background 0.6s, box-shadow 0.6s, -webkit-box-shadow 0.6s;
   -webkit-box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
   background-color: rgba(255, 255, 255, 0.2);
 }
+.my_work .my__work_item a:hover,
+.my_project .my__work_item a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  -webkit-box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+}
 .my_work .my__work_item a:hover .works__item_img,
 .my_project .my__work_item a:hover .works__item_img {
-  -ms-flex-item-align: center;
-  align-self: center;
-  -webkit-transform: scale(1.5);
-  transform: scale(1.5);
+  opacity: .6;
 }
 .my_work .my__work_item a .works__item_img,
 .my_project .my__work_item a .works__item_img {
@@ -415,21 +422,16 @@ body.nav_is_visible .menu {
   right: 0;
   bottom: 0;
   left: 0;
+  -ms-flex-item-align: center;
+  align-self: center;
   border-radius: 5px;
-  -webkit-transition: -webkit-transform .6s;
-  transition: -webkit-transform .6s;
-  transition: transform .6s;
-  transition: transform .6s, -webkit-transform .6s;
+  -webkit-transition: opacity .6s;
+  transition: opacity .6s;
   position: relative;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-color: rgba(29, 27, 31, 0.5);
-}
-.my_work .my__work_item a .works__item_img .transition-loader-inner,
-.my_project .my__work_item a .works__item_img .transition-loader-inner {
-  z-index: -1;
-  position: relative;
 }
 .my_skill .skill__title {
   display: block;
