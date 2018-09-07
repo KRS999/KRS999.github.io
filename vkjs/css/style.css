@@ -1,0 +1,61 @@
+@import url(reset.css);
+body {
+  background-color: #ffffff;
+  font: 16px "OpenSansRegular", sans-serif;
+}
+.va {
+  display: inline-block;
+  vertical-align: middle;
+}
+.container {
+  width: 100%;
+  max-width: 640px;
+  padding: 0;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+}
+a:focus {
+  outline: 0;
+}
+.icon {
+  background: url(../img/sprite.png);
+}
+.home .container {
+  border: 1px solid red;
+}
+.home-top {
+  background-color: #FCFAFF;
+}
+.home-top__img {
+  width: 100px;
+  height: 100px;
+  margin-right: 10px;
+}
+.home-top__img img {
+  width: 100%;
+}
+.home-top__titles span {
+  display: block;
+}
+.home-top__titles span:first-child,
+.home-top__titles span:nth-child(2) {
+  margin-bottom: 5px;
+}
+.home-top__titles span:last-child {
+  font-weight: bold;
+}
+.home-main ul li {
+  border-bottom: 1px solid #EDF3FF;
+}
+.home-main ul li a {
+  color: #141415;
+  display: block;
+  padding: 10px 5px;
+}
+@media screen and (min-width: 768px) {
+  .menu {
+    display: inline-block !important;
+  }
+}
