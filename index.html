@@ -5,22 +5,15 @@
 <meta name="viewport" content="width=device=width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 <title>KRS999</title>
 <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
-<link rel="stylesheet" type="text/css" href="css/preloader.css">
-<link rel="stylesheet" type="text/css" href="css/fonts.css">
 <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css">
-<link rel="stylesheet" type="text/css" href="css/normalize.css">
-<link rel="stylesheet" type="text/css" href="libs/ProgressBar/jquery.lineProgressbar.css">
 <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <script src="js/jquery-3.3.1.min.js"></script>
-<script src="libs/ProgressBar/jquery.lineProgressbar.js"></script>
 </head>
 <body>
 	<header>
 	<div class="button">
-		<span class="line"></span>
-		<span class="line"></span>
-		<span class="line"></span>
+		<img src="img/menu.svg" alt="">
 	</div>
 	<div class="menu">
 		<div class="menu_img">
@@ -39,19 +32,13 @@
 				<li>
 					<a href="#" data-class="project_is_visible">Проекты</a>
 				</li>
-				<!--
-				<li>
-					<a href="#" data-class="contact_is_visible">Связаться</a>
-				</li>
-				-->
 			</ul>
 		</nav>
 		<div class="soc_links">
 			<span>Связаться</span>
 			<ul>
-				<li><a href="https://vk.com/krs999" target="_blank"><i class="fa fa-vk"></i></a></li>
-				<li><a href="http://t.me/krs999" target="_blank"><i class="fa fa-telegram"></i></a></li>
-				<li><a href="https://www.facebook.com/abrek.kurbanov" target="_blank"><i class="fa fa-facebook"></i></a></li>
+				<li><a href="https://vk.com/no_name1232" target="_blank"><img src="img/vk.svg" alt=""></a></li>
+				<li><a href="http://t.me/krs999" target="_blank"><img src="img/telegram.svg" alt=""></a></li>
 			</ul>
 			<span>&#8226;&#8226;&#8226; KRS999 &#8226;&#8226;&#8226;</span>
 		</div> <!-- soc links end -->
@@ -62,14 +49,8 @@
 		<div class="content work">
 			<div class="wrapper">
 				<div class="container">
-					<div class="row my_work">
-						<div class="col-12">
-							<h1 class="title">Вёрстка</h1>
-						</div>
-						<div class="col-12">
-							<span class="empty empty-1">Пусто</span>
-						</div>
-					</div>
+					<h1 class="title">Вёрстка</h1>
+					<div class="row my_work"></div>
 				</div>
 			</div>
 		</div><!-- content work end -->
@@ -82,21 +63,27 @@
 						<div class="col-12">
 							<h1 class="title">Знания</h1>
 						</div>
-						<div class="col-12">
-							<span class="skill__title">HTML</span>
-							<div id="html"></div>
-
-							<span class="skill__title">CSS</span>
-							<div id="css"></div>
-
-							<span class="skill__title">JavaScript</span>
-							<div id="js"></div>
-
-							<span class="skill__title">jQuery</span>
-							<div id="jq"></div>
-
-							<span class="skill__title">React</span>
-							<div id="rt"></div>
+						<div class="col-12 my_skill-wrap">
+							<div class="skill html" data-percent="50" data-color="#E44D26">
+								<span class="skill__title">HTML</span>
+								<span class="skill__percent"></span>
+							</div>
+							<div class="skill css" data-percent="50" data-color="#0170BA">
+								<span class="skill__title">CSS</span>
+								<span class="skill__percent"></span>
+							</div>
+							<div class="skill js" data-percent="35" data-color="#F7DF1E">
+								<span class="skill__title">JavaScript</span>
+								<span class="skill__percent"></span>
+							</div>
+							<div class="skill jq" data-percent="20" data-color="#0768AC">
+								<span class="skill__title">jQuery</span>
+								<span class="skill__percent"></span>
+							</div>
+							<div class="skill rt" data-percent="0" data-color="#00D8FF">
+								<span class="skill__title">React</span>
+								<span class="skill__percent"></span>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -107,38 +94,18 @@
 		<div class="content project">
 			<div class="wrapper">
 				<div class="container">
-					<div class="row my_project">
-						<div class="col-12">
-							<h1 class="title">Проекты</h1>
-						</div>
-						<div class="col-12">
-							<span class="empty empty-3">Пусто</span>
-						</div>
-					</div>
+					<h1 class="title">Проекты</h1>
+					<div class="row my_project"></div>
 				</div>
 			</div>
 		</div> <!-- content project end -->
 	</section>
-	<!--
-	<div class="content contact">
-	</div>
-	-->
 </main>
-<div class="transition-loader global-loader work-tems-loader">
-	<div class="transition-loader-inner">
-		<label></label>
-		<label></label>
-		<label></label>
-		<label></label>
-		<label></label>
-		<label></label>
-	</div>
+<div class="preloader">
+	<img src="img/oval.svg" alt="">
 </div>
-	
-	
-	
 	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
-	<script src="js/base.js"></script>
-	<script src="js/function.js"></script>
+	<script src="js/KRS999.js"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>
