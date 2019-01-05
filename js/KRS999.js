@@ -92,7 +92,13 @@ const KRS999 = {
 	project: [
 		{
 			img: 'img/project-1.jpg',
-			href: 'codepen.io/krs999/'
+			href: 'codepen.io/krs999/',
+			title: 'Scripts KRS999'
+		},
+		{
+			img: 'img/project-2.jpg',
+			href: 'KRS999.github.io/WeatherClockBuild',
+			title: 'WeatherClock'
 		},
 	],
 };
