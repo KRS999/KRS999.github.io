@@ -100,5 +100,10 @@ const KRS999 = {
 			href: 'KRS999.github.io/WeatherClockBuild',
 			title: 'WeatherClock'
 		},
+		{
+			img: 'img/project-3.jpg',
+			href: 'KRS999.github.io/pinkMusicXD',
+			title: 'pinkMusicXD'
+		},
 	],
 };
