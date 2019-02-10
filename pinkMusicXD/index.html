@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device=width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<title>pinkMusicXD</title>
+<link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="libs/audio/js/foundation.min.js"></script>
+<script src="libs/audio/js/amplitude.min.js"></script>
+<script src="libs/particles/particles.min.js"></script>
+</head>
+<body>
+	<div id="particles-js"></div>
+	<div class="online-music">
+	<div id="player-screen" class="player">
+		<div class="player__header">
+			<a href="#" data-btn="playlist" class="music__btn arrow__btn">
+					<i class="material-icons">details</i>
+			</a>
+			<h1>
+				pinkMusicXD
+			</h1>
+			<a href="https://github.com/KRS999/pinkMusicXD" class="music__btn" target="_blank">
+				<i class="material-icons">file_download</i>
+			</a>
+		</div>
+		<!-- Player header end -->
+		<div class="player__cover">
+			<div class="player__cover-wrap">
+				<img src="img/cover.jpg" alt="">
+			</div>
+		</div>
+		<!-- Player cover end -->
+		<div class="player__titles">
+			<span amplitude-song-info="artist" amplitude-main-song-info="true"></span>
+			<span amplitude-song-info="name" amplitude-main-song-info="true" class="song-name"></span>
+		</div>
+		<!-- Player titles end -->
+		<div class="player__progress">
+			<div class="player__progress-wrap">
+					<input type="range" class="amplitude-song-slider" amplitude-main-song-slider="true"/>
+
+					<progress id="song-played-progress" class="amplitude-song-played-progress" amplitude-main-song-played-progress="true"></progress>
+
+					<progress id="song-buffered-progress" class="amplitude-buffered-progress" value="0"></progress>
+			</div>
+			<div class="player__progress-time">
+				<span class="amplitude-current-time time-container" amplitude-main-current-time="true"></span>
+				<span class="amplitude-duration-time time-container" amplitude-main-duration-time="true"></span>
+			</div>
+		</div>
+		<!-- Player progress end -->
+		<div class="player__control">
+			<div class="amplitude-shuffle" id="shuffle" data-btn="shuffle">
+				<i class="large material-icons">shuffle</i>
+			</div>
+			<div class="amplitude-prev" id="previous">
+				<i class="large material-icons">skip_previous</i>
+			</div>
+			<div class="amplitude-play-pause" amplitude-main-play-pause="true" id="play-pause">
+				<i class="large material-icons">play_arrow</i>
+				<i class="large material-icons">pause</i>
+			</div>
+			<div class="amplitude-next" id="next">
+				<i class="large material-icons">skip_next</i>
+			</div>
+			<div class="amplitude-repeat" id="repeat" data-btn="repeat">
+				<i class="large material-icons">repeat</i>
+			</div>
+		</div>
+		<!-- Player conterol end -->
+	</div>
+	<div class="player-playlist">
+		<div class="player__header player-playlist__header">
+			<a href="#" data-btn="playlist" class="music__btn close__playlist">
+					<i class="material-icons">details</i>
+			</a>
+			<h1>
+				Воспроизводится
+			</h1>
+			<a href="#" data-btn="player-search" class="music__btn">
+				<i class="material-icons">search</i>
+			</a>
+
+			<div class="player__search">
+				<a href="#" data-btn="close-search" class="music__btn">
+						<i class="material-icons">clear</i>
+				</a>
+				<input type="text" placeholder="Введите названия...">
+				<a href="#" data-btn="music-search" class="music__btn">
+						<i class="material-icons">search</i>
+				</a>
+			</div>
+		</div>
+		<div class="song-list music-items"></div>
+		<div class="player-playlist__footer">
+
+			<div class="player-playlist__cover">
+				<img amplitude-song-info="cover_art_url" amplitude-main-song-info="true" src="">
+				<div class="player-playlist__titles">
+					<span amplitude-song-info="artist" amplitude-main-song-info="true"></span>
+					<span amplitude-song-info="name" amplitude-main-song-info="true" class="song-name"></span>
+				</div>
+			</div>
+
+			<div class="player-playlist__control">
+				<div class="amplitude-prev" id="previous">
+					<i class="large material-icons">skip_previous</i>
+				</div>
+				<div class="amplitude-play-pause" amplitude-main-play-pause="true" id="play-pause">
+					<i class="large material-icons">play_arrow</i>
+					<i class="large material-icons">pause</i>
+				</div>
+				<div class="amplitude-next" id="next">
+					<i class="large material-icons">skip_next</i>
+				</div>
+				<a href="#" data-btn="library" class="music__btn library__btn">
+						<i class="material-icons">library_music</i>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="info">
+		<div class="info__close" data-btn="info-close"></div>
+		<div class="info__wrap">
+			<div class="album">
+				<img src="img/cover.jpg" alt="">
+			</div>
+			<div class="album__bottom"></div>
+		</div>
+	</div>
+
+	<div class="preloader">
+		<img src="img/preloader.svg" alt="">
+		<p>
+			pinkMusicXD by <span>KRS999</span>
+		</p>
+	</div>
+
+	<div class="preloader-ajax">
+		<img src="img/preloader.svg" alt="">
+	</div>
+</div>
+
+<div class="dev-titles">
+	<h1>pinkMusicXD by <a href="https://vk.com/krs999" target="_blank">KRS999</a></h1>
+	<p>powered by <a href="https://521dimensions.com/open-source/amplitudejs" target="_blank">AmplitudeJs</a> & <a href="https://mp3ton.info" target="_blank">mp3ton</a></p>
+</div>
+	<script src="js/foundation.fun.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
