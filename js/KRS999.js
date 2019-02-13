@@ -105,5 +105,10 @@ const KRS999 = {
 			href: 'KRS999.github.io/pinkMusicXD',
 			title: 'pinkMusicXD'
 		},
+		{
+			img: 'img/project-4.jpg',
+			href: 'KRS999.github.io/jQuery.skill.percent/',
+			title: 'jQuery.skill.percent'
+		},
 	],
 };
