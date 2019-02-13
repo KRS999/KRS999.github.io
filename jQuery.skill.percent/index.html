@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device=width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<title>jQuery.skill.percent</title>
+<link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Shadows+Into+Light" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script src="js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+	<header>
+		<div class="header">
+			<div class="container">
+				<div class="header__wrap">
+					<div class="logo">
+						<a href="https://github.com/KRS999" target="_blank">
+							<img src="././favicon.png" alt="">
+							jQuery.skill.percent
+						</a>
+					</div>
+					<div class="menu">
+						<ul>
+							<li><a href="https://github.com/KRS999/jQuery.skill.percent" target="_blank">Скачать</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- Header End -->
+	<main>
+		<div class="main">
+			<div class="container">
+				<div class="main__wrap">
+					<div class="main__wrap-top">
+						<h1>Аттрибуты</h1>
+						<div class="skill demo-skill" data-percent="95" data-percent-color="#E44D26" data-percent-mount-color="rgba(255,255,255,.1)">
+		  				<p class="skill__title">
+		  					HTML
+		  				</p>
+		  				<span class="skill__percent">0%</span>
+						</div>
+
+						<div class="skill demo-skill" data-percent="85" data-percent-color="#0170BA" data-percent-mount-color="rgba(255,255,255,.1)">
+		  				<p class="skill__title">
+		  					CSS
+		  				</p>
+		  				<span class="skill__percent">0%</span>
+						</div>
+
+						<div class="skill demo-skill" data-percent="75" data-percent-color="#F7DF1E" data-percent-mount-color="rgba(255,255,255,.1)">
+		  				<p class="skill__title">
+		  					JavaScript
+		  				</p>
+		  				<span class="skill__percent">0%</span>
+						</div>
+
+						<div class="skill demo-skill" data-percent="65" data-percent-color="#0768AC" data-percent-mount-color="rgba(255,255,255,.1)">
+		  				<p class="skill__title">
+		  					jQuery
+		  				</p>
+		  				<span class="skill__percent">0%</span>
+						</div>
+					</div>
+					<!-- Main wrap top end -->
+					<pre class="main__wrap-code">
+			<code>
+  <span class="code__blue">$</span><span class="code__white">(</span><span class="code__blue">'</span><span class="code__green">.demo-skill</span><span class="code__blue">'</span><span class="code__white">)</span><span class="code__blue">.</span><span class="code__blue">skillPercent</span><span class="code__white">({</span>
+    <span class="code__blue">'</span><span class="code__green">speed</span><span class="code__blue">'</span><span class="code__blue">:</span> <span class="code__pink">40</span> <span class="code__comment">//Скорость</span>
+  <span class="code__white">})</span><span class="code__blue">;</span></code>
+					</pre>
+					<!-- Code end -->
+					<div class="main__wrap-top">
+						<h1>Настройки</h1>
+
+						<div class="skill react">
+		  				<p class="skill__title">
+		  					React
+		  				</p>
+		  				<span class="skill__percent">0%</span>
+						</div>
+
+						<div class="skill angular">
+		  				<p class="skill__title">
+		  					Angular
+		  				</p>
+		  				<span class="skill__percent">0%</span>
+						</div>
+
+						<div class="skill node">
+		  				<p class="skill__title">
+		  					Node
+		  				</p>
+		  				<span class="skill__percent">0%</span>
+						</div>
+
+						<div class="skill php">
+		  				<p class="skill__title">
+		  					PHP
+		  				</p>
+		  				<span class="skill__percent">0%</span>
+						</div>
+
+					</div>
+					<!-- Main wrap top end -->
+					<pre class="main__wrap-code">
+			<code>
+  <span class="code__blue">$</span><span class="code__white">(</span><span class="code__blue">'</span><span class="code__green">.react</span><span class="code__blue">'</span><span class="code__white">)</span><span class="code__blue">.</span><span class="code__blue">skillPercent</span><span class="code__white">({</span>
+    <span class="code__blue">'</span><span class="code__green">settings</span><span class="code__blue">'</span><span class="code__blue">:</span> <span class="code__pink">true<span class="code__white">,</span></span> <span class="code__comment">//Настройки</span>
+    <span class="code__blue">'</span><span class="code__green">speed</span><span class="code__blue">'</span><span class="code__blue">:</span> <span class="code__pink">50<span class="code__white">,</span></span> <span class="code__comment">//Скорость</span>
+    <span class="code__blue">'</span><span class="code__green">color</span><span class="code__blue">'</span><span class="code__blue">:</span> <span class="code__blue">'</span><span class="code__pink">#61DAFB</span><span class="code__blue">'</span><span class="code__white">,</span> <span class="code__comment">//Верхний цвет</span>
+    <span class="code__blue">'</span><span class="code__green">mount-color</span><span class="code__blue">'</span><span class="code__blue">:</span> <span class="code__blue">'</span><span class="code__pink">rgba(255,255,255,.1)</span><span class="code__blue">'</span><span class="code__blue"></span><span class="code__white">,</span></span> <span class="code__comment">//Цвет подложки</span>
+    <span class="code__blue">'</span><span class="code__green">percent</span><span class="code__blue">'</span><span class="code__blue">:</span> <span class="code__pink">55<span class="code__white">,</span></span> <span class="code__comment">//Проценты</span>
+  <span class="code__white">})</span><span class="code__blue">;</span></code>
+					</pre>
+					<!-- Code end -->
+				</div>
+			</div>
+		</div>
+	</main>
+	<!-- Main end -->
+	<footer>
+		<div class="footer">
+			<div class="container">
+				<div class="footer__wrap">
+					<a href="https://vk.com/krs999" target="_blank">
+						by KRS999 xD
+					</a>
+					<p class="year"></p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- Footer end -->
+	<script src="js/jQuery.skill.percent.min.js"></script>
+	<script src="js/demo.js"></script>
+</body>
+</html>
