@@ -270,7 +270,6 @@ q {
   quotes: "" "";
 }
 body {
-  height: 2000px;
   color: #11264A;
   background-color: #ffffff;
   font: 15px "Roboto", sans-serif;
@@ -599,6 +598,7 @@ a:focus {
   justify-content: center;
   background-size: cover;
   background-position: center;
+  margin-bottom: 250px;
 }
 .footer:after,
 .footer:before {
